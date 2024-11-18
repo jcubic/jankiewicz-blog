@@ -276,6 +276,9 @@ main ul {
 main > ul, main img {
     padding-inline-start: 0.4em;
 }
+main img {
+    max-width: 100%;
+}
 main a:has(img) {
     display: inline-block;
 }

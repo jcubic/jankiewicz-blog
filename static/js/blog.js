@@ -45,10 +45,10 @@ const COL_MARGIN = 30;
 let char = char_size();
 let cookie_consent = !!localStorage.getItem('cookie');
 const [progress] = $$('nav.main pre');
-const cookie_banner_exists = typeof cookie_banner !== 'undefined' && cookie_banner.clientWidth !== 0;
 if (!cookie_consent) {
     display_banner('');
 }
+const cookie_banner_exists = typeof cookie_banner !== 'undefined' && cookie_banner.clientWidth !== 0;
 window.addEventListener('resize', resize, { passive: true });
 document.addEventListener('scroll', render_progress, { passive: true });
 if (cookie_banner_exists) {

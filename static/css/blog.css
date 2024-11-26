@@ -26,6 +26,9 @@ a:hover {
     color: var(--background);
     background: var(--color);
 }
+pre + :is(h2, h3, h4) {
+    margin-block-start: 2em;
+}
 h2 a,
 h3 a,
 h4 a {
@@ -37,18 +40,18 @@ h3 a::before {
     background: var(--background);
 }
 .skip-to-content {
-  position: absolute;
-  left: -9999px;
-  z-index: 999;
-  padding: 1em;
-  background-color: var(--background);
-  color: var(--color);
-  opacity: 0;
+    position: absolute;
+    left: -9999px;
+    z-index: 999;
+    padding: 1em;
+    background-color: var(--background);
+    color: var(--color);
+    opacity: 0;
 }
 .skip-to-content:focus {
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
 }
 
 main header h1, main h2, main h3 {

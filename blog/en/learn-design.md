@@ -14,7 +14,7 @@ In this article, I will show you 6 resources which will help you learn design as
 developer.
 
 <!-- more -->
-{%- card -%}
+{% card %}
 
 So to the point, here is a list of resources where you can learn web design.
 

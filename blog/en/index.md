@@ -20,6 +20,8 @@ with same name.
 
 ## [List of Articles](#list-of-articles)
 
-{% for page in collections.articles_en %}
-* [{{ page.data.title }}]({{ page.url }})
+{% assign posts = collections.articles_en | reverse %}
+
+{% for post in posts %}
+* [{{ post.data.title }}]({{ post.url }})
 {% endfor %}

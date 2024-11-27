@@ -21,6 +21,8 @@ wyniki wyszukiwania (SERP) są zajętę głównie przez aktora i takim samym imi
 
 ## [Lista artykułów](#lista-artykulow)
 
-{% for page in collections.articles_pl %}
-* [{{ page.data.title }}]({{ page.url }})
+{% assign posts = collections.articles_pl | reverse %}
+
+{% for post in posts %}
+* [{{ post.data.title }}]({{ post.url }})
 {% endfor %}

@@ -175,10 +175,14 @@ To allow headers to contain links, bold, and italic text we can define inline te
 ```
 inline_text = bold / italic / link / [^\n]
 
-header = '#'+ ' '* text:$inline_text* [\n] {
-    return '[[b;;]' + text + ']';
+header = '#'+ ' '* text:inline_text* [\n] {
+    return '[[b;;]' + text.join('') + ']';
 }
 ```
+
+We can't use the `$` operator here, because it only works with text and not results,
+so if you have rules that have JavaScript and return stuff, like we have with
+`inline_text` it will return our code and not parsed values.
 
 As stated before the backslash is an `or` operator. The `inline_text` contains a single
 non newline character, but since we use any number of them in the `text` label, it will
@@ -188,8 +192,8 @@ We can also define list items, which will be just literal asterisk but can conta
 the same text as headers:
 
 ```
-list_item = _ '*' __ text:$inline_text* [\n] {
-  return '* ' + text + '\n';
+list_item = _ '*' __ text:inline_text* [\n] {
+  return '* ' + text.join('') + '\n';
 }
 
 _ "whitespace" = [\s\t]*

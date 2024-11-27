@@ -73,6 +73,9 @@ pi.addEventListener('click', function(e) {
         }
     }
     if (e.ctrlKey && e.shiftKey) {
+        if (window._paq) {
+            _paq.push(['trackEvent', 'BLOG', 'easter egg']);
+        }
         // https://tinyurl.com/the-net
         const head = document.querySelector('head');
         new_script(head, 'https://cdn.jsdelivr.net/npm/cmatrix');

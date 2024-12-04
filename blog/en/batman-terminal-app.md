@@ -28,7 +28,7 @@ sure, if he even replied, so I assumed he didn't mind. I did refactor the code r
 customization and put it for [sale on
 Gum Road](https://jcubic.gumroad.com/l/vintage-web-terminal-quiz-application).
 
-You can see the live quiz at [quiz.terminal.jcubic.pl](http://quiz.terminal.jcubic.pl/). The
+You can see the live quiz at [quiz.terminal.jcubic.pl](https://quiz.terminal.jcubic.pl/). The
 username and password is "guest" (without the quotes).
 
 Originally, the quiz was used to give people a unique token (sequence of random characters) that

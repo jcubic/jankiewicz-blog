@@ -39,4 +39,7 @@ The questions are random, and they are hidden on the backend (same as answers), 
 the code to figure out all the questions and answers. The quiz also has IP protection, to prevent
 one person to keep answering the questions (but this feature is disabled on the demo).
 
+This was second time I worked on Web3 terminal project. If you need similar terminal for yours,
+I'm open to work for you, you can find the details on [this page](https://support.jcubic.pl/).
+
 {% include "_abbr" %}

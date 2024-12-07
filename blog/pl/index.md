@@ -24,5 +24,5 @@ wyniki wyszukiwania (SERP) są zajętę głównie przez aktora i takim samym imi
 {% assign posts = collections.articles_pl | reverse %}
 
 {% for post in posts %}
-* [{{ post.data.title }}]({{ post.url }})
+* [{{post.date | date: "%Y-%m-%d" }}]: [{{ post.data.title }}]({{ post.url }})
 {% endfor %}

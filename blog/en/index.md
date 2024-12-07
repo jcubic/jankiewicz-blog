@@ -23,5 +23,5 @@ with same name.
 {% assign posts = collections.articles_en | reverse %}
 
 {% for post in posts %}
-* [{{ post.data.title }}]({{ post.url }})
+* [{{post.date | date: "%Y-%m-%d" }}]: [{{ post.data.title }}]({{ post.url }})
 {% endfor %}

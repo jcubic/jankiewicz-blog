@@ -70,7 +70,7 @@ Here is example code, that I also include with the PR, how to use this feature i
 import readline from 'readline';
 import { satisfies } from 'compare-versions';
 
-cosnt version = process.version;
+const version = process.version;
 
 const supports_paste_brackets = satisfies(version, '>=18.19.0 <19') ||
       satisfies(version, '>=20.6.0');

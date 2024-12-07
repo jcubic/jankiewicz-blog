@@ -59,8 +59,9 @@ main header h1, main h2, main h3 {
     display: inline-block;
     margin: 0;
 }
-main h2, main h3 {
+main h2, main h3, main h4 {
     width: 100%;
+    scroll-margin-top: 2em;
 }
 /* jump to marker */
 span[id] {

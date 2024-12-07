@@ -59,8 +59,8 @@ Source, but first time to such big project as Node. I waited few months but fina
 merged, even that it didn't have unit tests (you can't actually test things like
 copy/paste), and the feature landed in versions:
 
-* [Node v18.19.0](https://github.com/nodejs/node/pull/50953)
-* [Node v20.6.0](https://github.com/nodejs/node/pull/49185)
+* [Node v18.19.0](https://nodejs.org/en/blog/release/v18.19.0)
+* [Node v20.6.0](https://nodejs.org/en/blog/release/v20.6.0)
 
 ## [Working example](#working-example)
 

@@ -64,7 +64,7 @@ copy/paste), and the feature landed in versions:
 
 ## [Working example](#working-example)
 
-Here is example code, that I also include with the PR, how to use this feature in Node.js:
+Here is example code, how to use this feature in Node.js:
 
 ```javascript
 import readline from 'readline';

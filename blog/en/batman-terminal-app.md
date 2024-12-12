@@ -31,6 +31,8 @@ Gum Road](https://jcubic.gumroad.com/l/vintage-web-terminal-quiz-application).
 You can see the live quiz at [quiz.terminal.jcubic.pl](https://quiz.terminal.jcubic.pl/). The
 username and password is "guest" (without the quotes).
 
+![Terminal Quiz App](/img/terminal-quiz-app.png)
+
 Originally, the quiz was used to give people a unique token (sequence of random characters) that
 they can use on Discord for the NFT project (probably to claim the free NFT). That's why the code
 asks for the username and give you a token.

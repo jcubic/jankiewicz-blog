@@ -54,15 +54,6 @@
   {%- for collection in collections.all -%}
     {%- assign otherArticles = collection | where: "data.en", originalTitle -%}
     {%- assign originalArticles = collection | where: "data.title", originalTitle -%}
-    {% for article in originalArticles -%}
-      {%- if article.data.lang == "en" -%}
-        <link rel="alternate" href="{{ site.url }}{{ article.url }}" hreflang="x-default" />
-        <link rel="alternate" href="{{ site.url }}{{ article.url }}" hreflang="{{ article.data.lang }}" />
-      {%- endif -%}
-    {%- endfor -%}
-    {%- for article in otherArticles -%}
-      <link rel="alternate" href="{{ site.url }}{{ article.url }}" hreflang="{{ article.data.lang }}" />
-    {%- endfor -%}
   {%- endfor %}
   <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
   {%- assign has_code = page | has_code %}

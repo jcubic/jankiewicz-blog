@@ -62,7 +62,8 @@ export default function(eleventyConfig) {
 
     eleventyConfig.on('eleventy.before', async ({ dir, runMode, outputMode }) => {
         browser = puppeteer.launch({
-            headless: 'new'
+            headless: 'new',
+            args: ['--no-sandbox']
         });
     });
 

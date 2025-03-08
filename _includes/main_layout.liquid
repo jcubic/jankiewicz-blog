@@ -54,7 +54,9 @@
   {%- for collection in collections.all -%}
     {%- assign otherArticles = collection | where: "data.en", originalTitle -%}
     {%- assign originalArticles = collection | where: "data.title", originalTitle -%}
-  {%- endfor %}
+  {%- endfor -%}
+  <link rel="alternate" type="application/rss+xml" title="RSS Feed for Jakub T. Jankiewicz Blog"
+        href="{{ site.url }}{% if lang != "en" %}/{{ lang }}{% endif %}/blog/rss.xml" />
   <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
   {%- assign has_code = page | has_code %}
   {% if has_code -%}
@@ -69,7 +71,7 @@
        "publisher": {
            "@type": "Organization",
            "name": "{{ blog.title }}",
-           "url": "{{ site.url }}{% if lang != "en" -%}/{{ lang }}{% endif %}/blog/",
+           "url": "{{ site.url }}{% if lang != "en" %}/{{ lang }}{% endif %}/blog/",
            "logo": {
                "@type": "ImageObject",
                "creator": {

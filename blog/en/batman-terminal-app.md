@@ -45,4 +45,5 @@ This was the second time I worked on Web3 terminal project. If you need similar 
 I'm open to work for you, you can find the details on [this page](https://support.jcubic.pl/).
 
 {% follow %}
+
 {% include "_abbr" %}

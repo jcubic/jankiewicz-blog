@@ -71,4 +71,5 @@ are no different. And what is better to watch then documentaries about tools, li
 [![Kubernetes Documentary Part 1](/img/kubernetes_2.jpg)](https://www.youtube.com/watch?v=318elIq37PE)
 
 {% follow %}
+
 {% include "_abbr" %}

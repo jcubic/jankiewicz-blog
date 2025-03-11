@@ -392,8 +392,6 @@ const theme = rpc_response.result ?? 'dark';
 This time it works even if the Service Worker is sleeping and you open
 JS or CSS file.
 
-If you find this article interesting you may want to follow me on Twitter:
-[@jcubic](https://jcu.bi/twitter) and on [LinkedIn](https://jcu.bi/ln).
-
 {% follow %}
+
 {% include "_abbr" %}

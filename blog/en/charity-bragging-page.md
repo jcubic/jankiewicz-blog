@@ -78,6 +78,11 @@ Freedom](https://en.wikipedia.org/wiki/Free_as_in_Freedom).  I donated few times
 perks](https://www.fsf.org/associate/benefits) if you join. I especially like access to
 [Jitsi](https://en.wikipedia.org/wiki/Jitsi) instance.
 
+## [4ocean](https://www.4ocean.com/)
+
+I also support 4ocean that clean the ocean from plastic. It's not exactly donation, but you can buy
+stuff from their shop and support their cause.
+
 If you use any of those Open Source projects and care about their cause, I encourage you to donate.
 And also create your own Charity bragging page.
 

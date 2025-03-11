@@ -22,8 +22,8 @@ Imagine what would happen if more people brag about donations to charities, and 
 donate too. Imagine an influencer that have 1 million of followers. What would happen if he or she
 shared that he or she donated to a cause he cares about and influence only 1% of those followers to
 do the same. Imagine if that 1% of followers actually donate, and it could be at least 1 dollar It
-will be 10,000 dollars for the charity. This is not small amount of money.  And this it's just worse
-case scenario of 1% and $1, it can be much more.
+will be 10,000 dollars for the charity. This is not a small amount of money.  And this it's just
+worse case scenario of 1% and $1, it can be much more.
 
 That's why I decided to write this article, and encourage people to write their charity bragging
 page, where they list charities they donate, and explanation whey they donate, with a link to donate

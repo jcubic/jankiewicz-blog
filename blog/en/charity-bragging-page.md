@@ -26,8 +26,8 @@ will be 10,000 dollars for the charity. This is not a small amount of money.  An
 worse case scenario of 1% and $1, it can be much more.
 
 That's why I decided to write this article, and encourage people to write their charity bragging
-page, where they list charities they donate, and explanation whey they donate, with a link to donate
-page.
+page, where they list charities they donate to, and explanation whey they donate, with a link to
+donate page.
 
 This article is my Charity bragging page, and here are charities I donate. The list may grow in the
 future, I will try to keep the list up to date. Note that on the lists are Open Source projects,

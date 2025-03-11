@@ -1,6 +1,6 @@
 ---
 title: Documentaries for Programmers
-description: In this article, I will show you 4 resources which will help you learn design as a web developer.
+description: In this article, I will list documentaries about languages, libraries, and tools for developers.
 date: 2025-03-05
 author: jcubic
 tags: articles_en

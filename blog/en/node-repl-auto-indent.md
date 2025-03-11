@@ -172,4 +172,5 @@ If you want, you can re-indent the code, but doing nothing works just fine.
 You can see this feature and more in my
 [LIPS Scheme REPL](https://lips.js.org/docs/lips/REPL).
 
+{% follow %}
 {% include "_abbr" %}

@@ -86,4 +86,5 @@ stuff from their shop and support their cause.
 If you use any of those Open Source projects and care about their cause, I encourage you to donate.
 And also create your own Charity bragging page.
 
-
+{% follow %}
+{% include "_abbr" %}

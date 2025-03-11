@@ -24,7 +24,7 @@ So I've [modified it](https://codepen.io/jcubic/pen/xxYBWqr) and adding to the w
 
 I've created a basic code and fixed bugs during the launch of the NFT. I worked long hours to fix
 Everything.  When the project was done, I've asked that person if it's ok to reuse his code, I'm not
-sure, if he even replied, so I assumed he didn't mind. I did refactor the code removed any
+sure, if he even replied, so I assumed he didn't mind. I did refactor the code, removed any
 customization and put it for [sale on
 Gum Road](https://jcubic.gumroad.com/l/vintage-web-terminal-quiz-application).
 
@@ -41,7 +41,8 @@ The questions are random, and they are hidden on the backend (same as answers), 
 the code to figure out all the questions and answers. The quiz also has IP protection, to prevent
 one person to keep answering the questions (but this feature is disabled on the demo).
 
-This was second time I worked on Web3 terminal project. If you need similar terminal for yours,
+This was the second time I worked on Web3 terminal project. If you need similar terminal for yours,
 I'm open to work for you, you can find the details on [this page](https://support.jcubic.pl/).
 
+{% follow %}
 {% include "_abbr" %}

@@ -74,4 +74,7 @@ does anything front-end related. Even if that would be really basic. Knowledge a
 invaluable, especially if you're a new developer, and want to create projects for your portfolio
 that will stand out. It's always better to show something that looks good.
 
+{% follow %}
+
 {% include "_abbr" %}
+

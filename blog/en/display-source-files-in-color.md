@@ -395,4 +395,5 @@ JS or CSS file.
 If you find this article interesting you may want to follow me on Twitter:
 [@jcubic](https://jcu.bi/twitter) and on [LinkedIn](https://jcu.bi/ln).
 
+{% follow %}
 {% include "_abbr" %}

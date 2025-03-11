@@ -223,4 +223,5 @@ Parser generators like PEG are a great way to create simple and complex language
 and parsers for them. PEG grammar libraries with minor differences, are supported
 in a lot of different languages, not only JavaScript.
 
+{% follow %}
 {% include "_abbr" %}

@@ -187,6 +187,11 @@ export default function(eleventyConfig) {
 
     eleventyConfig.addFilter('rtrim', str => str.replace(/\s+$/, ''));
 
+    eleventyConfig.addLiquidShortcode('follow', function() {
+        return `<p>If you find this article interesting you may want to follow me on Twitter:
+<a href="https://jcu.bi/twitter">@jcubic</a> and on <a href="https://jcu.bi/ln">LinkedIn</a>.</p>`;
+    });
+
     eleventyConfig.addLiquidShortcode('card', async function() {
         const { title, author: username, date, lang, users } = this.ctx.environments
         const svg_path = path.join(__dirname, 'static/img');

@@ -18,6 +18,7 @@ a:hover {
     color: var(--link-hover);
 }
 a, a:visited {
+    --border-thickness: 1px;
     text-underline-offset: 0.25em;
     color: var(--color);
 }
@@ -33,11 +34,13 @@ h2 a,
 h3 a,
 h4 a {
     text-decoration: none;
+    border-bottom: var(--border-thickness) solid var(--color);
 }
 h2 a::before,
 h3 a::before {
     color: var(--color);
     background: var(--background);
+    border-bottom: var(--border-thickness) solid var(--background);
 }
 .skip-to-content {
     position: absolute;

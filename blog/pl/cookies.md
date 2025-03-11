@@ -11,7 +11,8 @@ tags: pages_pl
 
 {% include "_langs" %}
 
-Używam ciasteczek w celach analitycznach dzięki oprogramowaniu [OWA](https://www.openwebanalytics.com/),
-które zbiera tylko zanonimizowane dane. W przyszłości mogę dodać także gadżety z mediów społecznościowych,
-jak np. [Facebook Page Plugin](https://developers.facebook.com/docs/plugins/page-plugin) który może zbierać
-więcej informacji o użytkownikach.
+Używam ciasteczek w celach analitycznach dzięki oprogramowaniu
+[OWA](https://www.openwebanalytics.com/) oraz [Umami Cloud](https://umami.is/), które zbierają tylko
+zanonimizowane dane. W przyszłości mogę dodać także gadżety z mediów społecznościowych, jak
+np. [Facebook Page Plugin](https://developers.facebook.com/docs/plugins/page-plugin), który może
+zbierać więcej informacji o użytkownikach.

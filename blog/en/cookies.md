@@ -10,7 +10,7 @@ tags: pages_en
 
 {% include "_langs" %}
 
-We use cookies only for Analytics using [OWA](https://www.openwebanalytics.com/),
-which collects anonymized data only. In the future I may add social network
-widgets like [Facebook Page Plugin](https://developers.facebook.com/docs/plugins/page-plugin)
-which may collect some more data.
+We use cookies only for Analytics using [OWA](https://www.openwebanalytics.com/) and [Umami
+Cloud](https://umami.is/), which collects anonymized data only. In the future I may add social
+network widgets like [Facebook Page
+Plugin](https://developers.facebook.com/docs/plugins/page-plugin) which may collect some more data.

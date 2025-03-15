@@ -281,6 +281,7 @@ export default function(eleventyConfig) {
 
     eleventyConfig.addGlobalData('site', {
         url,
+        comments: false,
         twitter: 'jcubic',
         repo: 'https://github.com/jcubic/jankiewicz-blog',
         dev

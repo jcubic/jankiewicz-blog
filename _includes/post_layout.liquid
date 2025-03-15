@@ -19,6 +19,7 @@ layout: main_layout.liquid
   {{ content }}
 </section>
 {%- assign article_tag = "articles_" | append: lang -%}
+{%- if site.comments -%}
 {%- if tags contains article_tag and not site.dev %}
   <script src="https://giscus.app/client.js"
           id="comments"
@@ -38,4 +39,5 @@ layout: main_layout.liquid
           crossorigin="anonymous"
           async>
   </script>
+{%- endif -%}
 {%- endif -%}

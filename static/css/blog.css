@@ -359,7 +359,15 @@ ul {
     padding-left: 15px;
 }
 main li p {
-  display: inline;
+    display: inline;
+}
+h2#bloglets ~ p {
+    margin-block: 0.5em 2em;
+}
+h2#bloglets ~ ul li p {
+    display: inline-block;
+    margin-block: 0.5em 0;
+    margin-inline-start: 1ch;
 }
 footer {
     margin-top: 2em;

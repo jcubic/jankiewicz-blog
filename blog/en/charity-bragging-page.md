@@ -60,9 +60,10 @@ myself anymore.
 
 ## [Polish Wikipedia](https://opp.wikimedia.pl/)
 
-I mostly donate via 1.5% of tax. In Poland, we can donate 1.5% of our tax to charity organizations. I
-always donate to Wikipedia.  I'm Polish Wikipedia editor and I take part in their conference
-"WZLOT".
+I mostly donate via 1.5% of tax. In Poland, we can donate 1.5% of our tax to charity
+organizations. I always donate to Wikipedia.  But I also support Polish Wikipedia as a volunteer,
+I'm Polish Wikipedia editor and I take part in their conference "WZLOT". Beside editing I'm also a
+mentor for newcomers, and a Wiki Trainer.
 
 ## [Web Mode](https://github.com/sponsors/fxbois)
 

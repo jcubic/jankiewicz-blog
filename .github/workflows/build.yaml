@@ -31,4 +31,8 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
 
       - name: Copy files to server
-        run: scp -P ${{ secrets.SSH_PORT}} -o StrictHostKeyChecking=no -r ./_site/* ${{ secrets.SSH_USER }}@${{ secrets.SSH_SERVER }}:${{ secrets.SSH_PATH }}
+        uses: nick-fields/retry@v3
+        with:
+          timeout_minutes: 5
+          max_attempts: 3
+          command: scp -P ${{ secrets.SSH_PORT}} -o StrictHostKeyChecking=no -r ./_site/* ${{ secrets.SSH_USER }}@${{ secrets.SSH_SERVER }}:${{ secrets.SSH_PATH }}

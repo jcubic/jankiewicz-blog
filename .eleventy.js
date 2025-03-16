@@ -231,7 +231,7 @@ export default function(eleventyConfig) {
             return content;
         }
         const path = this.page.outputPath;
-        if (path.endsWith('.html')) {
+        if (path && path.endsWith('.html')) {
             return minify(content, {
                 collapseWhitespace: true
             });

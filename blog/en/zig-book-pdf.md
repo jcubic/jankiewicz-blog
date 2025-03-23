@@ -65,7 +65,7 @@ zig: /usr/bin/zig /usr/lib/zig
 zig will be installed in /usr/bin/ directory (by default it compiled into `./stage3` directory, by
 adding environment variable CMAKE_PREFIX_PATH we are forcing to install it into root directory).
 
-## [Build Zig Book](#build-zig-book)
+## [Build Zig Book as PDF](#build-zig-book-as-pdf)
 
 Now it's time to build the PDF version of the Zig Book:
 

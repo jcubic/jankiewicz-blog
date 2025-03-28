@@ -6,7 +6,7 @@ author: jcubic
 tags: bloglet_en
 ---
 
-Great article by [Scott Boyle](https://www.linkedin.com/in/scottboyle/) about Tailwind.  It provides
+Article by [Scott Boyle](https://www.linkedin.com/in/scottboyle/) about Tailwind.  It provides
 an objective look at Tailwind CSS, highlighting it's strengths and limitations, without overly
 praising or criticizing the tool.
 

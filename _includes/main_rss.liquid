@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href="{% if lang != 'en' %}/{{ lang }}{% endif %}/blog/pretty-feed.xsl" type="text/xsl"?>
+<?xml-stylesheet href="{{ site.url }}{% if lang != 'en' %}{{ lang }}{% endif %}/blog/pretty-feed.xsl" type="text/xsl"?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    {%- if lang == "en" -%}
-      {% assign base_url = site.url | append: "/blog/" %}
+    {%- if collection startswith "bloglet" -%}
+      {% assign feed_url = site.url | append: permalink %}
+    {%-  elsif lang == "en" -%}
+      {% assign feed_url = site.url | append: "/blog/feed.xml" %}
     {%- else -%}
-      {% assign base_url = lang | append: "/blog" | prepend: "/" | prepend: site.url %}
+      {% assign feed_url = lang | append: "/blog/feed.xml" | prepend: "/" | prepend: site.url %}
     {%- endif -%}
     {{- content | rtrim }}
-    <link>{{ base_url }}</link>
-    <atom:link href="{{ base_url }}/rss.xml" rel="self" type="application/rss+xml" />
+    <link>{{ feed_url }}</link>
+    <atom:link href="{{ feed_url }}" rel="self" type="application/rss+xml" />
     <lastBuildDate>{{ collections[collection] | lastDate | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
     {%- for post in collections[collection] reversed | slice: 0, 10 -%}
-      {% assign post_url = site.url | append: post.url %}
-      <item>
+      {%- if collection startswith "bloglet" -%}
+        {% assign post_url = post.data.url %}
+      {%- else -%}
+        {% assign post_url = site.url | append: post.url %}
+      {%- endif %}<item>
         <title>{{ post.data.title }}</title>
         <link>{{ post_url }}</link>
         <description>{{ post.templateContent | intro | xml_escape }}</description>

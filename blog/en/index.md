@@ -35,6 +35,5 @@ This is a list of short form content, including TIL and
 
 {% for post in posts %}
 * [{{post.date | date: "%Y-%m-%d" }}]: {% if post.data.url %}[{{ post.data.title }}]({{ post.data.url }}){% else %}{{ post.data.title }}{% endif %} {{ post.content }}
-
-{% endfor -%}
+{%- endfor -%}
 {%- include "_abbr" -%}

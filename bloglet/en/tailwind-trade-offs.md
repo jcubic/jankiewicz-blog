@@ -7,6 +7,6 @@ tags: bloglet_en
 ---
 
 Article by [Scott Boyle](https://www.linkedin.com/in/scottboyle/) about Tailwind.  It provides
-an objective look at Tailwind CSS, highlighting it's strengths and limitations, without overly
+an objective look at Tailwind CSS, highlighting its strengths and limitations, without overly
 praising or criticizing the tool.
 

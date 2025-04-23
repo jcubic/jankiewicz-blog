@@ -17,7 +17,6 @@
     "eleventy-plugin-embed-everything": "^1.19.0",
     "eleventy-xml-plugin": "^0.1.0",
     "figlet": "^1.7.0",
-    "front-matter": "^4.0.2",
     "html-entities": "^2.5.2",
     "html-minifier-terser": "^7.2.0",
     "markdown-it-abbr": "^2.0.0",

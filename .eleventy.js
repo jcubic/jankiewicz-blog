@@ -8,7 +8,6 @@ import { encode } from 'html-entities';
 import crc32 from './crc32.js';
 import path from 'path';
 import fs from 'fs/promises';
-import fm from 'front-matter';
 import { Liquid } from 'liquidjs';
 import puppeteer from 'puppeteer';
 import { dirname } from 'node:path';

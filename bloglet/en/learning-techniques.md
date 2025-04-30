@@ -6,5 +6,5 @@ author: jcubic
 tags: bloglet_en
 ---
 
-A little clickbaity video about best learning techniques. It reminds me of a book: "Włam się do mózgu" (ang. Hack Your Brain) by [Radek Kotarski](https://pl.wikipedia.org/wiki/Rados%C5%82aw_Kotarski). The book is only in Polish and include a lot of techniques described in the video.
+A little clickbaity video about best learning techniques. It reminds me of a book: "Włam się do mózgu" (ang. Hack Your Brain) by [Radek Kotarski](https://pl.wikipedia.org/wiki/Rados%C5%82aw_Kotarski). The video includes a lot of techniques described in the book (available only in Polish).
 

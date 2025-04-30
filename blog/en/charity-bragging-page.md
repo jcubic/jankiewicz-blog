@@ -82,7 +82,7 @@ perks](https://www.fsf.org/associate/benefits) if you join. I especially like ac
 
 I also support 4ocean that clean the ocean from plastic. It's not exactly donation, but you can buy
 stuff from their shop and support their cause. I got a few things from them. I even got members of my
-family a gift for a Chrismas that I purchased from 4ocean.
+family a gift for Chrismas that I purchased from 4ocean.
 
 If you use any of those Open Source projects and care about their cause, I encourage you to donate.
 And also to create your own Charity bragging page.

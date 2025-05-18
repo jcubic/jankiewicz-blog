@@ -118,12 +118,6 @@ export default function(eleventyConfig) {
         }
     });
 
-    eleventyConfig.addFilter('jsonify', obj => {
-        if (obj) {
-            return JSON.stringify(obj);
-        }
-    });
-
     eleventyConfig.addFilter('translation', (collection, title) => {
         return collection.filter(page => {
             if (page.data.title?.startsWith(title)) {

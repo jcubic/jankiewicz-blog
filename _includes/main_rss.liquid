@@ -13,8 +13,8 @@
     <link>{{ feed_url }}</link>
     <atom:link href="{{ feed_url }}" rel="self" type="application/rss+xml" />
     <lastBuildDate>{{ collections[collection] | lastDate | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
-    {%- for post in collections[collection] reversed | slice: 0, 10 -%}
-      {%- if collection startswith "bloglet" -%}
+    {%- for post in collections[collection] reversed | slice: 0, 10 %}
+      {% if collection contains "bloglet" -%}
         {% assign post_url = post.data.url %}
       {%- else -%}
         {% assign post_url = site.url | append: post.url %}

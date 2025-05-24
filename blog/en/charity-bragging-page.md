@@ -12,7 +12,7 @@ Do you donate to charities? I do. And in this post I decided to explain, why it'
 {% card %}
 
 Charities are non-profit, and the only money they have, come from donations. They often struggle to
-encourage people to donate, not a lot of people are willing to do this. Some of charities like
+encourage people to donate, not a lot of people are willing to do this. Some of the charities like
 Wikipedia, Internet Archive, or Free Software Foundation do marketing campaigns to encourage people
 to donate. Others do other things to encourage donors. Some Open Source Software encourage donations
 as part of their interface, like GIMP or Inkscape.
@@ -30,7 +30,7 @@ donate page.
 
 This article is **my Charity bragging page**, and here are charities I donate to. The list may grow
 in the future, I will try to keep the list up to date. Note that some of them are Open Source
-projects, they are not exactly charities, but Open Source projects also are operate on donations.
+projects, they are not exactly charities, but Open Source projects also operate on donations.
 
 ## [Internet Archive](https://archive.org/donate?origin=jakub.jankiewicz.org)
 

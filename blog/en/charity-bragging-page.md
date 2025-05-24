@@ -1,5 +1,5 @@
 ---
-title: Charity Bragging Page
+title: How to Help Charities and Your Ego
 description: In this article, I will show you 4 resources which will help you learn design as a web developer.
 date: 2025-03-11
 author: jcubic

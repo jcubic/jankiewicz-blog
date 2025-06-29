@@ -84,8 +84,14 @@ I also support 4ocean that clean the ocean from plastic. It's not exactly donati
 stuff from their shop and support their cause. I got a few things from them. I even got members of my
 family a gift for Chrismas that I purchased from 4ocean.
 
+## [ImTranslator](https://imtranslator.net/)
+
+The imTranslator is another Open Source project that I donated to. It's a Chrome Extension (that I
+use with Brave) to translate selected text. I mostly use it for single words that I don't know. I
+also you it to translate a sentence I wrote to see if I didn't make any silly mistakes.
+
 If you use any of those Open Source projects and care about their cause, I encourage you to donate.
-And also to create your own Charity bragging page.
+And also to create your own Charity Bragging Page, with your own list, that may encourage others.
 
 {% follow %}
 

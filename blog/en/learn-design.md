@@ -9,7 +9,7 @@ tags: articles_en
 People often ask me how to learn design. And since I'm mostly web developer, I get this
 question mostly from web developers. I decided to write this blog post to redirect people
 that ask this question.
-
+q
 In this article, I will show you 7 resources which will help you learn design as a web
 developer.
 
@@ -66,6 +66,13 @@ design and bit about Accessibility.
 
 This is also a longer video, a 3 hours intro about Web Design for beginners. It don't only explain
 how to design but contain full process of designing websites.
+
+8. [Refactoring UI](https://www.refactoringui.com/)
+
+[![Refactoring UI - eBook](/img/refactoring-ui.jpg)](https://www.refactoringui.com/)
+
+This is a paid eBook that teaches how to create beautiful user interfaces explained from a
+developer's point-of-view.
 
 ## [Summary](#summary)
 

@@ -71,7 +71,7 @@ how to design but contain full process of designing websites.
 
 [![Refactoring UI - eBook](/img/refactoring-ui.jpg)](https://www.refactoringui.com/)
 
-This is a paid eBook that teaches how to create beautiful user interfaces explained from a
+This is a paid e-book that teaches how to create beautiful user interfaces, explained from a
 developer's point-of-view.
 
 ## [Summary](#summary)

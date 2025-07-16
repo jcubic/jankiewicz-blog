@@ -300,6 +300,10 @@ main ul li::before {
     top: 0.2em;
     left: -0.4em;
 }
+main ul li:not(:has(p)) {
+    text-indent: -1ch;
+    margin-inline-start: 1ch;
+}
 /* LANGUAGES */
 .languages::before {
     content: "// :: ";

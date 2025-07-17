@@ -18,13 +18,15 @@ will share a link when someone asks this question.
 <!-- more -->
 {% card %}
 
-## [Playground Project](#playground-project)
+Let's dive in.
+
+## Playground Project
 
 Learn the basics and do what I call a playground project. Test everything you learn, and every time
 you have an idea, "I wonder if this will work...", you should just test it. If the programming
 language is flexible, like JavaScript is, you can often combine syntax, like with Lego bricks.
 
-## [Learn by Practice](#learn-by-practice)
+## Learn by Practice
 
 If you want to learn anything, you need to practice. If you don't practice, you don't actually
 learn. You only suffer from the illusion of knowing. The best way to practice is by creating a
@@ -34,7 +36,7 @@ want an idea for a project, check this repository with a list of ideas:
 [![A Collection of application ideas which can be used to improve your coding skills. -
 florinpop17/app-ideas](https://opengraph.githubassets.com/72c833ee8a0767b37621646a38d4539cb2533fcbbddac8ccb5c660df0de9122a/florinpop17/app-ideas)](https://github.com/florinpop17/app-ideas)
 
-## [Learn by Teaching](#learn-by-teaching)
+## Learn by Teaching
 
 Teaching can take many forms; you don't need to stand in front of a class to teach. You can write a
 blog post or share what you learn on social media. Before you write something, remember to do your
@@ -48,26 +50,26 @@ To start a blog, you can pick one of:
 * [HashNode](https://hashnode.com/)
 * [Substack](https://substack.com/)
 
-## [Motivation](#motivation)
+## Motivation
 
 I personally never had a problem with motivation, because programming is my passion. I really love
 doing this and don't need an extra push in this direction.
 
 But if you have a problem with motivation yourself, I suggest:
 
-### [Feeding Your Motivation](#feeding-your-motivation)
+### Feeding Your Motivation
 
 Remember why you're doing this. If you have a goal, keep that goal in mind when you feel like
 quitting.
 
-### [Connect With Others](#connect-with-others)
+### Connect With Others
 
 If you learn with other people, you can motivate each other to keep learning.
 
 You can start the [#100DaysOfCode challenge](https://www.100daysofcode.com/) and share what you
 learn on social media.
 
-### [Breaking Down Your Goals](#breaking-down-your-goals)
+### Breaking Down Your Goals
 
 If you have a big goal, like learning programming, that may take a year or more, you should break
 down your goals into smaller steps, like:
@@ -79,7 +81,7 @@ down your goals into smaller steps, like:
 When you use your learning materials, they can have chapters or modules. They can be your smaller
 steps.
 
-### [Reward Yourself](#reward-yourself)
+### Reward Yourself
 
 If you reach a milestone (or a smaller step toward your goal), or finish your daily learning task,
 give yourself a reward. It can be anything, like:
@@ -91,7 +93,7 @@ give yourself a reward. It can be anything, like:
 * Taking a walk.
 * Eating something sweet or a snack.
 
-## [Conclusion](#conclusion)
+## Conclusion
 
 Learning to code is a journey, and it’s not always easy, but it’s worth it. Start small with
 playground projects, practice every day, share what you learn, and keep your motivation alive with

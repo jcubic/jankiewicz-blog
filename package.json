@@ -14,6 +14,7 @@
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "cheerio": "^1.1.0",
     "eleventy-plugin-embed-everything": "^1.19.0",
     "eleventy-xml-plugin": "^0.1.0",
     "figlet": "^1.7.0",

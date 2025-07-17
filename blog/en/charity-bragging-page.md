@@ -32,21 +32,21 @@ This article is **my Charity bragging page**, and here are charities I donate to
 in the future, I will try to keep the list up to date. Note that some of them are Open Source
 projects, they are not exactly charities, but Open Source projects also operate on donations.
 
-## [Internet Archive](https://archive.org/donate?origin=jakub.jankiewicz.org)
+## Internet Archive
 
 I'm a Wikipedia editor, and I can't image editing Wikipedia without Internet Archive. I mostly use
 Wayback Machine to check how a website looked like in the past. I sometimes lent a book from its
 digital library, also as a source for Wikipedia. If you want to read about how they operate, you can
 check this [Twitter/X Thread](https://threadreaderapp.com/thread/1204428311553642496.html).
 
-## [Inkscape](https://inkscape.org/support-us/donate/)
+## Inkscape
 
 I use Inkscape all the time. It's a graphic program which allows you to create vector images as SVG
 files. SVG is the standard vector format on the Web. I use this tool since I started creating
 artworks for [Open Clipart](https://openclipart.org/artist/kuba). I also use it for my graphic and
 web design projects. I'm not a professional designer but can't imagine the world without Inkscape.
 
-## [Let's Encrypt](https://letsencrypt.org/donate/)
+## Let's Encrypt
 
 This charity singlehandlly make it possible for the most of the web to move to
 [HTTPS](https://en.wikipedia.org/wiki/HTTPS). Making the world more secure place by issue free [SSL
@@ -58,18 +58,18 @@ the last time I was given a gift in exchange for donation:
 All my websites are secured thanks to Let's Encrypt. Even that I don't need to manage the certificate
 myself anymore. It's done by my hosting provider.
 
-## [Polish Wikipedia](https://opp.wikimedia.pl/)
+## Polish Wikipedia
 
 I mostly donate via 1.5% of tax. In Poland, we can donate 1.5% of our tax to charity
 organizations. I always donate to Wikipedia.  But I also support Polish Wikipedia as a volunteer,
 I'm Polish Wikipedia editor and I take part in their conference "WZLOT". Beside editing, I'm also a
 mentor for newcomers, and a Wiki Trainer.
 
-## [Web Mode](https://github.com/sponsors/fxbois)
+## Web Mode
 
 Web Mode is my goto extension when editing files in GNU Emacs.
 
-## [Free Software Foundation](https://my.fsf.org/donate)
+## Free Software Foundation
 
 Without FSF and GNU project there would be no Linux and no Open Source.  If you want to read about
 the story of a person that started it all you can read a book: [Free as in
@@ -78,13 +78,13 @@ Freedom](https://en.wikipedia.org/wiki/Free_as_in_Freedom).  I donated few times
 perks](https://www.fsf.org/associate/benefits) if you join. I especially like access to
 [Jitsi](https://en.wikipedia.org/wiki/Jitsi) instance (a video conferencing app).
 
-## [4ocean](https://www.4ocean.com/)
+## 4ocean
 
 I also support 4ocean that clean the ocean from plastic. It's not exactly donation, but you can buy
 stuff from their shop and support their cause. I got a few things from them. I even got members of my
 family a gift for Chrismas that I purchased from 4ocean.
 
-## [ImTranslator](https://imtranslator.net/)
+## ImTranslator
 
 The imTranslator is another Open Source project that I donated to. It's a Chrome Extension (that I
 use with Brave) to translate selected text. I mostly use it for single words that I don't know. I

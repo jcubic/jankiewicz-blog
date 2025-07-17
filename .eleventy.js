@@ -1,17 +1,19 @@
-import { IdAttributePlugin } from '@11ty/eleventy';
 import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight';
 import embeds from 'eleventy-plugin-embed-everything';
 import markdownIt from 'markdown-it';
 import abbr from 'markdown-it-abbr';
 import { minify } from 'html-minifier-terser';
 import { encode } from 'html-entities';
-import crc32 from './crc32.js';
 import path from 'path';
 import fs from 'fs/promises';
 import { Liquid } from 'liquidjs';
 import puppeteer from 'puppeteer';
 import { dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import * as cheerio from 'cheerio';
+import slugify from '@sindresorhus/slugify';
+
+import crc32 from './crc32.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -35,6 +37,25 @@ async function path_exists(path) {
     }
 }
 
+function transform_headers(content) {
+    if (!this.page || !this.page.inputPath.match(/blog\/.*md$/)) {
+        return content;
+    }
+
+    const $ = cheerio.load(content);
+    $('h1, h2, h3, h4, h5, h6').each((_, el) => {
+        const $el = $(el);
+        const text = $el.text();
+        const slug = slugify(text);
+        $el.attr('id', slug);
+        if (!$el.children('a').length) {
+            $el.wrapInner(`<a href="#${slug}"></a>`);
+        }
+    })
+
+    return $.html();
+};
+
 function filter_tags(collectionApi, filter_callback) {
     const collections = collectionApi.getAll();
     return collections.reduce((result, template) => {
@@ -50,7 +71,6 @@ function filter_tags(collectionApi, filter_callback) {
 }
 
 export default function(eleventyConfig) {
-    eleventyConfig.addPlugin(IdAttributePlugin);
 
     const options = {
         html: true,
@@ -58,6 +78,8 @@ export default function(eleventyConfig) {
     };
 
     let browser;
+
+    eleventyConfig.addTransform('add-header-links', transform_headers);
 
     eleventyConfig.on('eleventy.before', async ({ dir, runMode, outputMode }) => {
         browser = puppeteer.launch({

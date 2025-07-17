@@ -29,7 +29,7 @@ Most of the demos I create start on CodePen, that's why I prefer to use UMD
 modules since this is the easiest to set up. If you want to see the final code,
 there is a link to CodePen at the end of the article.
 
-## [Getting Started with Peggy](#getting-started-with-peggy)
+## Getting Started with Peggy
 
 First quick intro to Peggy.js, the parser code is created from rules like this:
 
@@ -85,7 +85,7 @@ console.log(parser.parse('*hello*'));
 
 This assumes that `peggy` is defined, you can import it into your project or use a script tag.
 
-## [Markdown Parser](#markdown-parser)
+## Markdown Parser
 
 The first rule that we will support is the Markdown header that we will convert into
 bold text.
@@ -217,7 +217,7 @@ content = text:(image  / inline_text / list_item)+ nl:[\n]? {
 Here is the [CodePen demo](https://codepen.io/jcubic/pen/zYLvPQa) for the whole parser,
 if you want to play with it.
 
-## [Conclusion](#conclusion)
+## Conclusion
 
 Parser generators like PEG are a great way to create simple and complex languages
 and parsers for them. PEG grammar libraries with minor differences, are supported

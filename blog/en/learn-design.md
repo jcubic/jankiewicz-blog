@@ -74,7 +74,7 @@ how to design but contain full process of designing websites.
 This is a paid e-book that teaches how to create beautiful user interfaces, explained from a
 developer's point-of-view.
 
-## [Summary](#summary)
+## Summary
 
 I strongly believe that every web developer should learn basics of design, especially if he or she
 does anything front-end related. Even if that would be really basic. Knowledge about design can be

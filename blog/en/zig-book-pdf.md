@@ -25,7 +25,7 @@ Zig book require zig in version 0.14.0 and when this article was written,
 the Fedora package had version 0.13.0. So when the version of zig is not up to date.
 You need to install zig from source.
 
-## [Install Zig from Source](#install-zig-from-source)
+## Install Zig from Source
 
 To compile zig you need to:
 
@@ -65,7 +65,7 @@ zig: /usr/bin/zig /usr/lib/zig
 zig will be installed in /usr/bin/ directory (by default it compiled into `./stage3` directory, by
 adding environment variable CMAKE_PREFIX_PATH we are forcing to install it into root directory).
 
-## [Build Zig Book as PDF](#build-zig-book-as-pdf)
+## Build Zig Book as PDF
 
 Now it's time to build the PDF version of the Zig Book:
 

@@ -18,7 +18,7 @@ I decided to create this blog mostly to grow my personal brand and to improve
 SEO of my content for my name. In Polish Google it's occupied mostly by actor
 with same name.
 
-## [List of Articles](#list-of-articles)
+## List of Articles
 
 {% assign posts = collections.articles_en | reverse %}
 
@@ -26,7 +26,7 @@ with same name.
 * [{{post.date | date: "%Y-%m-%d" }}]: [{{ post.data.title }}]({{ post.url }})
 {% endfor %}
 
-## [Bloglets](#bloglets)
+## Bloglets
 
 This is a list of short form content, including TIL and
 [Linklog](https://en.wikipedia.org/wiki/Linklog). You can also subscribe to it via

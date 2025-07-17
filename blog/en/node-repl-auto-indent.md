@@ -23,7 +23,7 @@ known rules. The REPL was working when you press enter, but it broke when you
 copy/paste the code. I've attempted to fix this issue with few iterations.
 It but this features always had bugs that I was not able to eliminate completely.
 
-## [Paste Bracket Mode](#paste-bracket-mode)
+## Paste Bracket Mode
 
 Then suddenly, I don't know where I discovered
 [paste-bracket mode](https://en.wikipedia.org/wiki/Bracketed-paste). It's special
@@ -36,7 +36,7 @@ just printing this code into your standard output. To disable this feature
 you can use `\x1b[?2004l`. When paste brackets is turn on the code you paste
 into terminal is wrapped between `\x1b\[200~` and `\x1b\[201~` ANSI Escape codes.
 
-## [Node.js Readline vs GNU Readline](#node-js-readline-vs-gnu-readline)
+## Node.js Readline vs GNU Readline
 
 This is feature is part of [GNU Readline
 library](https://en.wikipedia.org/wiki/GNU_Readline) which allows moving and editing the
@@ -50,7 +50,7 @@ StackOverflow](https://stackoverflow.com/questions/74095099/how-to-use-terminal-
 but eventually deleted the question because no one know the answer.  If you want to see
 this, you need to have enough reputation, since the question was deleted.
 
-## [My Contribution to Node.js](#my-contribution-to-node-js)
+## My Contribution to Node.js
 
 Then I've created an issue on GitHub about paste bracket mode in Node.js, and Ben
 Noordhuis suggested that I contributed. I was looking at the code and [created a
@@ -62,7 +62,7 @@ copy/paste), and the feature landed in versions:
 * [Node v18.19.0](https://nodejs.org/en/blog/release/v18.19.0)
 * [Node v20.6.0](https://nodejs.org/en/blog/release/v20.6.0)
 
-## [Working example](#working-example)
+## Working example
 
 Here is example code, how to use this feature in Node.js:
 

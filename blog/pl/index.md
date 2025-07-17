@@ -19,7 +19,7 @@ Zdecydowałem się na stworzenie tego bloga, głównie aby budować swoją mark�
 osobistą, oraz aby poprawić SEO dla mojego imienia i nazwiska. W Polskim Google
 wyniki wyszukiwania (SERP) są zajętę głównie przez aktora i takim samym imieniu.
 
-## [Lista artykułów](#lista-artykulow)
+## Lista artykułów
 
 {% assign posts = collections.articles_pl | reverse %}
 

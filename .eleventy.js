@@ -43,7 +43,7 @@ function transform_headers(content) {
     }
 
     const $ = cheerio.load(content);
-    $('h1, h2, h3, h4, h5, h6').each((_, el) => {
+    $('h2, h3, h4, h5, h6').each((_, el) => {
         const $el = $(el);
         const text = $el.text();
         const slug = slugify(text);

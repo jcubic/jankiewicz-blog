@@ -93,13 +93,37 @@ give yourself a reward. It can be anything, like:
 * Taking a walk.
 * Eating something sweet or a snack.
 
+## Asking For Help
+
+When you struggle with a problem, don't hesitate to ask for help. As soon as you don't have any new
+ideas to try out, ask for help. You can use AI, Google Search, StackOverflow, or Reddit to ask a
+question. Asking a good question is a skill that you need to learn. It takes time, just like with
+programming.
+
+When you just search for the solution or you ask AI, and find a piece of code, don't just copy/paste
+it blindly; try to understand it first. If something is not clear, you can ask AI or the person who
+provides the answer to explain it.
+
+You won’t learn if you don't understand the code you use.
+
+## Using LLMs While Learning
+
+You can use LLMs (AI) when you're learning, but make sure that you don't fall into the trap of using
+them for so-called vibe coding, where AI just generates the code and you accept it blindly. You
+won’t learn anything if you vibe code.
+
+You can use LLMs, but use them as a teacher, ask for help, or ask them to explain stuff. You have an
+amazing tool at your disposal: a personal teacher that can answer all your questions. Use them
+wisely.
+
 ## Conclusion
 
 Learning to code is a journey, and it’s not always easy, but it’s worth it. Start small with
 playground projects, practice every day, share what you learn, and keep your motivation alive with
-small rewards. Don’t give up when things get tough – break your goals into smaller steps and
-celebrate every win. You’re not just learning to code; you’re building a skill that can open so many
-doors. Keep going, and enjoy the process!
+small rewards. Don’t be afraid to ask for help when you’re stuck, and use tools like AI wisely to
+understand, not just copy, solutions. Don’t give up when things get tough – break your goals into
+smaller steps and celebrate every win. You’re not just learning to code; you’re building a skill
+that can open so many doors. Keep going, and enjoy the process!
 
 {% follow %}
 

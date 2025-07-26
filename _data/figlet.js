@@ -1,6 +1,4 @@
-import { promisify } from 'util';
-import __figlet__ from 'figlet';
-const figlet = promisify(__figlet__.text);
+import figlet from 'figlet';
 
 // ref: https://stackoverflow.com/a/30970751/387194
 function escape(s) {

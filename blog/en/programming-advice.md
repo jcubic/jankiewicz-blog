@@ -116,6 +116,14 @@ You can use LLMs, but use them as a teacher, ask for help, or ask them to explai
 amazing tool at your disposal: a personal teacher that can answer all your questions. Use them
 wisely.
 
+## Learning Should Be Hard
+
+Don't try to make learning programming easier. Just like with any learning, you need to put in the
+effort to process information with your brain in order to learn. So don't take shortcuts, like using
+LLMs to make your life easier. If you want to remember what you've learned, you don't only need to
+understand it; you also need to process that knowledge by thinking about it, putting it all
+together, or by practicing and combining what you've learned with stuff you already know.
+
 ## Conclusion
 
 Learning to code is a journey, and it’s not always easy, but it’s worth it. Start small with

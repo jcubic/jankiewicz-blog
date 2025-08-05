@@ -124,6 +124,8 @@ LLMs to make your life easier. If you want to remember what you've learned, you 
 understand it; you also need to process that knowledge by thinking about it, putting it all
 together, or by practicing and combining what you've learned with stuff you already know.
 
+But at the same time, you need to remember that if you struggle too much, you should ask for help.
+
 ## Conclusion
 
 Learning to code is a journey, and it’s not always easy, but it’s worth it. Start small with

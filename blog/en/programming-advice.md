@@ -1,6 +1,6 @@
 ---
 title: My Advice to New Developers
-description: "My tips for new developers, answering a common question from Twitter's developer communities"
+description: "My tips for new developers: projects, practice, teaching, motivation, using AI wisely, and embracing the challenge of learning."
 date: 2025-07-16
 author: jcubic
 tags: articles_en

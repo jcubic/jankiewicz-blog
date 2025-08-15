@@ -6,4 +6,4 @@ author: jcubic
 tags: bloglet_en
 ---
 
-An article which explains [Aesthetic–Usability effect](https://en.wikipedia.org/wiki/Aesthetic%E2%80%93usability_effect), a one of the cognitive biass users often make.
+An article which explains [Aesthetic–Usability effect](https://en.wikipedia.org/wiki/Aesthetic%E2%80%93usability_effect), a one of the cognitive biases users often make.

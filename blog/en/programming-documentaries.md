@@ -70,6 +70,11 @@ are no different. And what is better to watch then documentaries about tools, li
 
 [![Kubernetes Documentary Part 1](/img/kubernetes_2.jpg)](https://www.youtube.com/watch?v=318elIq37PE)
 
+14. [Python by CultRepo (formerly Honeypot)](https://www.youtube.com/watch?v=GfH4QL4VqJ0)
+
+[![Python Documentary](/img/python-documentary.jpg)](https://www.youtube.com/watch?v=GfH4QL4VqJ0)
+
+
 {% follow %}
 
 {% include "_abbr" %}

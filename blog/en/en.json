@@ -11,9 +11,9 @@
     "layout": "post_layout.liquid",
     "blog": {
         "locale": "en_US",
-        "title": "Jakub Jankiewicz Blog",
+        "title": "Jakub T. Jankiewicz Blog",
         "home": "Blog home page",
-        "description": "This is Jakub Jankiewicz personal blog",
+        "description": "This is Jakub T, Jankiewicz personal blog",
         "source": "edit this page",
         "license": "The content of this blog is released under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license",
         "skip": "Skip to main content"

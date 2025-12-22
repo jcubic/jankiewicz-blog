@@ -13,36 +13,47 @@
   {%- if not site.dev %}
   <link rel="prefetch" href="https://umami.jcubic.pl/script.js" />
   {%- endif %}
-  <meta name="apple-mobile-web-app-title" content="Jakub Jankiewicz Blog" />
-  <meta name="application-name" content="Jakub Jankiewicz Blog" />
+  <meta name="apple-mobile-web-app-title" content="Jakub T. Jankiewicz Blog" />
+  <meta name="application-name" content="Jakub T, Jankiewicz Blog" />
   <meta name="msapplication-TileColor" content="#b72100" />
   <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
   <meta name="theme-color" content="#ffffff" />
   {%- assign has_card = page | has_card %}
   {% assign social_image = site.url | append: "/img/" | append: lang | append: "/" | append: page.fileSlug | append: ".png" -%}
-  <meta property="og:locale" content="{{ blog.locale }}"/>
-  <meta property="og:type" content="article"/>
-  <meta property="og:title" content="{% if title %}{{ title }}{% else %}{{ blog.title }}{% endif %}"/>
-  <meta property="og:description" content="{% if description %}{{ description }}{% else %}{{ blog.description }}{% endif %}"/>
-  <meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
-  <meta property="og:site_name" content="{{ blog.title }}"/>
+  <meta property="og:locale" content="{{ blog.locale }}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="{% if title %}{{ title }}{% else %}{{ blog.title }}{% endif %}" />
+  <meta property="og:description" content="{% if description %}{{ description }}{% else %}{{ blog.description }}{% endif %}" />
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+  <meta property="og:site_name" content="{{ blog.title }}" />
   {%- if has_card %}
-    <meta property="og:image" content="{{ social_image }}"/>
-    <meta property="og:image:width" content="1200"/>
-    <meta property="og:image:height" content="630"/>
+  <meta property="og:image" content="{{ social_image }}" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  {%- else %}
+  <meta property="og:image" content="https://jakub.jankiewicz.org/img/main-card-blog.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
   {%- endif %}
   {%- if author and title %}
-    <meta name="twitter:title" content="{{ title }}"/>
-    <meta name="twitter:description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}"/>
-    {%- if has_card %}
-      <meta name="twitter:image" content="{{ social_image }}"/>
-      <meta name="twitter:image:alt" content="Simple image that shows title author and date of the article" />
-      <meta name="twitter:card" content="summary_large_image"/>
-    {%- else %}
-      <meta name="twitter:card" content="summary"/>
-    {%- endif %}
-    <meta name="twitter:site" content="@{{ site.twitter }}"/>
-    <meta name="twitter:creator" content="@{% if users[author].twitter %}{{ users[author].twitter }}{% else %}{{ twitter }}{% endif %}"/>
+  <meta name="twitter:title" content="{{ title }}" />
+  <meta name="twitter:description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}" />
+  {%- if has_card %}
+  <meta name="twitter:image" content="{{ social_image }}" />
+  <meta name="twitter:image:alt" content="Simple image that shows title author and date of the article" />
+  <meta name="twitter:card" content="summary_large_image" />
+  {%- else %}
+  <meta name="twitter:card" content="summary" />
+  {%- endif %}
+  <meta name="twitter:site" content="@{{ site.twitter }}" />
+  <meta name="twitter:creator" content="@{% if users[author].twitter %}{{ users[author].twitter }}{% else %}{{ site.twitter }}{% endif %}" />
+  {%- else %}
+  <meta name="twitter:site" content="@{{ site.twitter }}" />
+  <meta name="twitter:creator" content="@{{ site.twitter }}" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ site.title }}" />
+  <meta name="twitter:description" content="{{ site.description }}" />
+  <meta name="twitter:image" content="https://jakub.jankiewicz.org/img/main-card-blog.png" />
   {%- endif %}
   <link rel="stylesheet" href="/{% with_hash "css/blog.css" %}" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />

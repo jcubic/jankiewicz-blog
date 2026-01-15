@@ -73,8 +73,8 @@ pi.addEventListener('click', function(e) {
         }
     }
     if (e.ctrlKey && e.shiftKey) {
-        if (window._paq) {
-            _paq.push(['trackEvent', 'BLOG', 'easter egg']);
+        if (window.umami) {
+            umami.track('REPL', 'easter egg');
         }
         // https://tinyurl.com/the-net
         const head = document.querySelector('head');

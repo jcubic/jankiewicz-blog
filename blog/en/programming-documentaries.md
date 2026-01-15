@@ -6,9 +6,12 @@ author: jcubic
 tags: articles_en
 ---
 
-People love watching movies, especially related to things they love. Developers
-are no different. And what is better to watch than documentaries about tools, libraries, and programming languages that we all use and love. Here is a list of documentaries created by [CultRepo](https://www.youtube.com/@CultRepo) (formerly Honeypot)
-[OfferZen](https://www.youtube.com/@OfferZenOrigins), and some older documentary that you can find on YouTube.
+People love watching movies, especially related to things they love. Developers are no
+different. And what is better to watch than documentaries about tools, libraries, and programming
+languages that we all use and love. Here is a list of documentaries created by
+[CultRepo](https://www.youtube.com/@CultRepo) (formerly Honeypot)
+[OfferZen](https://www.youtube.com/@OfferZenOrigins), and some older documentary that you can find
+on YouTube.
 
 <!-- more -->
 {% card %}
@@ -127,6 +130,10 @@ are no different. And what is better to watch than documentaries about tools, li
 25. [Nvidia Documentary](https://www.youtube.com/watch?v=1QC9X_QW52k)
 
 [![Nvidia with Jensen Huang](/img/nvidia.jpg)](https://www.youtube.com/watch?v=1QC9X_QW52k)
+
+26. [CODE: Debugging the Gender Gap](https://www.youtube.com/watch?v=rQKRw6tWsb8)
+
+[![CODE: Debugging the Gender Gap](/img/code-gender.jpg)](https://www.youtube.com/watch?v=rQKRw6tWsb8)
 
 {% follow %}
 

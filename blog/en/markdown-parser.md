@@ -1,5 +1,5 @@
 ---
-title: How to Implement a Simple Markdown Parser
+title: How to Implement a Simple Markdown Parser?
 description: In this article, I will show how to implement a simple Markdown parser to be used with jQuery Terminal.
 date: 2024-11-26
 author: jcubic

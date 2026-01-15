@@ -1,5 +1,5 @@
 ---
-title: How to Learn Design as a Web Developer
+title: How to Learn Design as a Web Developer?
 description: In this article, I will show you 7 resources which will help you learn design as a web developer.
 date: 2024-10-03
 author: jcubic

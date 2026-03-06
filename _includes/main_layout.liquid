@@ -99,8 +99,16 @@
                  ]
              },
              {
+                 "@type": "WebPage",
+                 "@id": "{{ site.url }}{{ ld.url }}#webpage",
+                 "url": "{{ site.url }}{{ ld.url }}",
+                 "isPartOf": { "@id": "{{ site.url }}{{ ld.url }}" },
+                 "breadcrumb": { "@id": "{{ site.url }}{{ ld.url }}#breadcrumbs" },
+                 "mainEntity": { "@id": "{{ site.url }}{{ ld.url }}" }
+             },
+             {
                  "@type": "Blog",
-                 "@id": "https://jakub.jankiewicz.org/blog/",
+                 "@id": "{{ site.url }}{{ ld.url }}",
                  "name": "{{ title }}",
                  "url": "{{ site.url }}{{ ld.url }}",
                  "description": "{{ description }}",
@@ -109,15 +117,16 @@
                  "countryOfOrigin": {
                      "@type": "Country",
                      "name": "Poland"
+                 },
+                 "isPartOf": {
+                     "@id": "{{ site.url }}#website"
                  }
              },
              {
-                 "@type": "WebPage",
-                 "@id": "{{ site.url }}{{ ld.url }}#webpage",
-                 "url": "{{ site.url }}{{ ld.url }}",
-                 "isPartOf": { "@id": "{{ site.url }}{{ ld.url }}" },
-                 "breadcrumb": { "@id": "{{ site.url }}{{ ld.url }}#breadcrumbs" },
-                 "mainEntity": { "@id": "{{ site.url }}{{ ld.url }}" }
+                 "@type": "WebSite",
+                 "@id": "{{ site.url }}#website",
+                 "url": "{{ site.url }}",
+                 "name": "jakub.jankiewicz.org"
              },
              {
                  "@type": "BreadcrumbList",
@@ -168,19 +177,6 @@
                  ]
              },
              {
-                 "@type": "Blog",
-                 "@id": "https://jakub.jankiewicz.org/blog/",
-                 "name": "{{ title }}",
-                 "url": "{{ site.url }}{{ ld.url }}",
-                 "description": "{{ description }}",
-                 "inLanguage": "{{ ld.lang }}",
-                 "publisher": { "@id": "https://jakub.jankiewicz.org" },
-                 "countryOfOrigin": {
-                     "@type": "Country",
-                     "name": "Poland"
-                 }
-             },
-             {
                  "@type": "BlogPosting",
                  "publisher": { "@id": "https://jakub.jankiewicz.org" },
                  "author": { "@id": "https://jakub.jankiewicz.org" },
@@ -198,15 +194,43 @@
                      "@type": "WebPage",
                      "@id": "https://google.com/article"
                  },
-                 "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+                 "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+                 "isPartOf": {
+                     "@id": "{{ site.url }}{{ page.url }}#webpage"
+                 }
              },
              {
                  "@type": "WebPage",
                  "@id": "{{ site.url }}{{ page.url }}#webpage",
                  "url": "{{ site.url }}{{ page.url }}",
-                 "isPartOf": { "@id": "{{ site.url }}{{ ld.url }}" },
+                 "isPartOf": { "@id": "{{ site.url }}{{ ld.url }}#blog" },
                  "breadcrumb": { "@id": "{{ site.url }}{{ page.url }}#breadcrumbs" },
                  "mainEntity": { "@id": "{{ site.url }}{{ page.url }}" }
+             },
+             {
+                 "@type": "Blog",
+                 "@id": "{{ site.url }}{{ ld.url }}",
+                 "name": "{{ title }}",
+                 "url": "{{ site.url }}{{ ld.url }}",
+                 "description": "{{ description }}",
+                 "inLanguage": "{{ ld.lang }}",
+                 "publisher": { "@id": "https://jakub.jankiewicz.org" },
+                 "countryOfOrigin": {
+                     "@type": "Country",
+                     "name": "Poland"
+                 },
+                 "sameAs": [
+                     "https://github.com/jcubic/jankiewicz-blog"
+                 ],
+                 "isPartOf": {
+                     "@id": "{{ site.url }}#website"
+                 }
+             },
+             {
+                 "@type": "WebSite",
+                 "@id": "{{ site.url }}#website",
+                 "url": "{{ site.url }}",
+                 "name": "jakub.jankiewicz.org"
              },
              {
                  "@type": "BreadcrumbList",

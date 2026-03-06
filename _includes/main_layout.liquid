@@ -74,44 +74,176 @@
   <link href="https://cdn.jsdelivr.net/npm/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet" />
   {% endif -%}
   {%- assign article_lang = tags | article -%}
-  {% if article_lang == lang  -%}
+  {%- assign is_home = tags | includes: "home" -%}
+  {% if is_home %}
+    <script type="application/ld+json">
+     {
+         "@context": "https://schema.org",
+         "@graph": [
+             {
+                 "@type": "Person",
+                 "@id": "https://jakub.jankiewicz.org",
+                 "name": "Jakub T. Jankiewicz",
+                 "alternateName": "jcubic",
+                 "url": "https://jakub.jankiewicz.org/pl/",
+                 "image": {
+                     "@type": "ImageObject",
+                     "@id": "https://jakub.jankiewicz.org#image",
+                     "url": "https://live.staticflickr.com/65535/50132910231_73d867794f_k_d.jpg",
+                     "caption": "Jakub T. Jankiewicz"
+                 },
+                 "jobTitle": "Senior Front-End Developer",
+                 "description": "{{ ld.person.description }}",
+                 "sameAs": [
+                     "https://www.wikidata.org/wiki/Q113688230"
+                 ]
+             },
+             {
+                 "@type": "Blog",
+                 "@id": "https://jakub.jankiewicz.org/blog/",
+                 "name": "{{ title }}",
+                 "url": "{{ site.url }}{{ ld.url }}",
+                 "description": "{{ description }}",
+                 "inLanguage": "{{ ld.lang }}",
+                 "publisher": { "@id": "https://jakub.jankiewicz.org" },
+                 "countryOfOrigin": {
+                     "@type": "Country",
+                     "name": "Poland"
+                 }
+             },
+             {
+                 "@type": "WebPage",
+                 "@id": "{{ site.url }}{{ ld.url }}#webpage",
+                 "url": "{{ site.url }}{{ ld.url }}",
+                 "isPartOf": { "@id": "{{ site.url }}{{ ld.url }}" },
+                 "breadcrumb": { "@id": "{{ site.url }}{{ ld.url }}#breadcrumbs" },
+                 "mainEntity": { "@id": "{{ site.url }}{{ ld.url }}" }
+             },
+             {
+                 "@type": "BreadcrumbList",
+                 "@id": "{{ site.url }}{{ ld.url }}#breadcrumbs",
+                 "itemListElement": [
+                     {
+                         "@type": "ListItem",
+                         "position": 1,
+                         "item": {
+                             "@id": "https://jakub.jankiewicz.org",
+                             "name": "Home Page"
+                         }
+                     },
+                     {
+                         "@type": "ListItem",
+                         "position": 2,
+                         "item": {
+                             "@id": "{{ site.url }}{{ ld.url }}#webpage",
+                             "name": "Blog"
+                         }
+                     }
+                 ]
+             }
+         ]
+     }
+    </script>
+  {% elsif article_lang == lang  -%}
   <script type="application/ld+json">
    {
-       "@context": "https://schema.org",
-       "@type": "BlogPosting",
-       "publisher": {
-           "@type": "Organization",
-           "name": "{{ blog.title }}",
-           "url": "{{ site.url }}{% if lang != "en" %}/{{ lang }}{% endif %}/blog/",
-           "logo": {
-               "@type": "ImageObject",
-               "creator": {
-                   "@type": "Person",
-                   "@id": "https://jakub.jankiewicz.org",
-                   "name": "Jakub Jankiewicz",
-                   "alternateName": "Jakub T. Jankiewicz"
-               },
-               "url": "{{ site.url }}/favicon/android-chrome-512x512.png"
-           }
-       },
-       "author": {{ users[author].ld | jsonify }},
-       "headline": "{{ title }}",
-       "image": {
-           "@type": "ImageObject",
-           "url": "{{ social_image }}",
-           "license": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
-           "width": {{ 1200 }},
-           "height": {{ 630 }}
-       },
-       "description": "{{ page.description }}",
-       "mainEntityOfPage": {
-           "@type": "WebPage",
-           "@id": "https://google.com/article"
-       },
-       "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+         "@context": "https://schema.org",
+         "@graph": [
+             {
+                 "@type": "Person",
+                 "@id": "https://jakub.jankiewicz.org",
+                 "name": "Jakub T. Jankiewicz",
+                 "alternateName": "jcubic",
+                 "url": "https://jakub.jankiewicz.org/pl/",
+                 "image": {
+                     "@type": "ImageObject",
+                     "@id": "https://jakub.jankiewicz.org#image",
+                     "url": "https://live.staticflickr.com/65535/50132910231_73d867794f_k_d.jpg",
+                     "caption": "Jakub T. Jankiewicz"
+                 },
+                 "jobTitle": "Senior Front-End Developer",
+                 "description": "{{ ld.person.description }}",
+                 "sameAs": [
+                     "https://www.wikidata.org/wiki/Q113688230"
+                 ]
+             },
+             {
+                 "@type": "Blog",
+                 "@id": "https://jakub.jankiewicz.org/blog/",
+                 "name": "{{ title }}",
+                 "url": "{{ site.url }}{{ ld.url }}",
+                 "description": "{{ description }}",
+                 "inLanguage": "{{ ld.lang }}",
+                 "publisher": { "@id": "https://jakub.jankiewicz.org" },
+                 "countryOfOrigin": {
+                     "@type": "Country",
+                     "name": "Poland"
+                 }
+             },
+             {
+                 "@type": "BlogPosting",
+                 "publisher": { "@id": "https://jakub.jankiewicz.org" },
+                 "author": { "@id": "https://jakub.jankiewicz.org" },
+                 "url": "{{ site.url }}{{ page.url }}",
+                 "headline": "{{ title }}",
+                 "image": {
+                     "@type": "ImageObject",
+                     "url": "{{ social_image }}",
+                     "license": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+                     "width": {{ 1200 }},
+                     "height": {{ 630 }}
+                 },
+                 "description": "{{ page.description }}",
+                 "mainEntityOfPage": {
+                     "@type": "WebPage",
+                     "@id": "https://google.com/article"
+                 },
+                 "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+             },
+             {
+                 "@type": "WebPage",
+                 "@id": "{{ site.url }}{{ page.url }}#webpage",
+                 "url": "{{ site.url }}{{ page.url }}",
+                 "isPartOf": { "@id": "{{ site.url }}{{ ld.url }}" },
+                 "breadcrumb": { "@id": "{{ site.url }}{{ page.url }}#breadcrumbs" },
+                 "mainEntity": { "@id": "{{ site.url }}{{ page.url }}" }
+             },
+             {
+                 "@type": "BreadcrumbList",
+                 "@id": "{{ site.url }}{{ page.url }}#breadcrumbs",
+                 "itemListElement": [
+                     {
+                         "@type": "ListItem",
+                         "position": 1,
+                         "item": {
+                             "@id": "https://jakub.jankiewicz.org",
+                             "name": "Home Page"
+                         }
+                     },
+                     {
+                         "@type": "ListItem",
+                         "position": 2,
+                         "item": {
+                             "@id": "{{ site.url }}{{ ld.url }}#webpage",
+                             "name": "Blog"
+                         }
+                     },
+                     {
+                         "@type": "ListItem",
+                         "position": 3,
+                         "item": {
+                             "@id": "{{ site.url }}{{ page.url }}#webpage",
+                             "name": "{{ title }}"
+                         }
+                     }
+                 ]
+             }
+         ]
    }
   </script>
   {% endif -%}
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}"/>
+  <link rel="can" href="https://webmention.io/jakub.jankiewicz.org/webmention" />
   <link rel="webmention" href="https://webmention.io/jakub.jankiewicz.org/webmention" />
   <link rel="pingback" href="https://webmention.io/jakub.jankiewicz.org/xmlrpc" />
   <meta name="generator" content="{{ eleventy.generator }}" />

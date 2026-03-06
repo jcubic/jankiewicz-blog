@@ -123,6 +123,13 @@ export default function(eleventyConfig) {
         return /{%-?\s+card\s+-?%}/.test(md);
     });
 
+    eleventyConfig.addFilter('includes', (input, value) => {
+        if (!input) {
+            return false;
+        }
+        return input.includes(value);
+    });
+
     eleventyConfig.addFilter('article', tags => {
         if (!tags) {
             return;

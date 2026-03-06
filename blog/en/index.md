@@ -3,7 +3,7 @@ layout: main_layout.liquid
 title: Jakub T. Jankiewicz Blog
 description: This is my personal blog, where I write about different topics that interests me.
 permalink: "/blog/"
-tags: pages_en
+tags: pages_en,home
 ---
 
 <header>

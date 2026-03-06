@@ -17,5 +17,12 @@
         "source": "edit this page",
         "license": "The content of this blog is released under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license",
         "skip": "Skip to main content"
+    },
+    "ld": {
+        "lang": "en-US",
+        "url": "/blog/",
+        "person": {
+            "description": "Open Source Developer with 15-years of exprerience, author of LIPS Scheme, jQuery Terminal and educational project WikiZEIT."
+        }
     }
 }

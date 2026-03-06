@@ -17,5 +17,12 @@
         "source": "edytuj tą stronę",
         "license": "Zawartość tego bloga jest udostępniona na licencji [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)",
         "skip": "Pomiń i przejdź do sekcji głównej"
+    },
+    "ld": {
+        "lang": "pl-PL",
+        "url": "/pl/blog/",
+        "person": {
+            "description": "Programista Open Source z 15-letnim stażem, twórca interpretera LIPS Scheme oraz projektu edukacyjnego WikiZEIT."
+        }
     }
 }

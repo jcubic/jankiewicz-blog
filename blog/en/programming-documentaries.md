@@ -74,30 +74,34 @@ on YouTube.
 
 [![Python Documentary](/img/python-documentary.jpg)](https://www.youtube.com/watch?v=GfH4QL4VqJ0)
 
-15. [Vite: The Documentary](https://www.youtube.com/watch?v=bmWQqAKLgT4)
+15. [IntelliJ IDEA: The Documentary | An origin story](https://www.youtube.com/watch?v=Kourq_Lz03U)
+
+[![IntelliJ IDEA: The Documentary | An origin story](/img/intellij-idea.jpg)](https://www.youtube.com/watch?v=Kourq_Lz03U)
+
+16. [Vite: The Documentary](https://www.youtube.com/watch?v=bmWQqAKLgT4)
 [![Vite: The Documentary](/img/vite-documentary.jpg)](https://www.youtube.com/watch?v=bmWQqAKLgT4)
 
-16. [Triumph of The Nerds](https://www.youtube.com/watch?v=c1yzXkH5Pfo)
+17. [Triumph of The Nerds](https://www.youtube.com/watch?v=c1yzXkH5Pfo)
 
 [![Triumph of The Nerds](/img/triumph-nerds.jpg)](https://www.youtube.com/watch?v=c1yzXkH5Pfo)
 
-17. [Hackers - Wizards of the Electronic Age](https://www.youtube.com/watch?v=zOP1LNr70aU)
+18. [Hackers - Wizards of the Electronic Age](https://www.youtube.com/watch?v=zOP1LNr70aU)
 
 [![Hackers: Wizards of the Electronic Age](/img/hackers-wizards.png)](https://www.youtube.com/watch?v=zOP1LNr70aU)
 
-18. [Hackers Are People Too](https://www.youtube.com/watch?v=_2R6znVOGys)
+19. [Hackers Are People Too](https://www.youtube.com/watch?v=_2R6znVOGys)
 
 [![Hackers Are People Too](/img/hackers-are-people.png)](https://www.youtube.com/watch?v=_2R6znVOGys)
 
-19. [The Code: Linux Documentary](https://www.youtube.com/watch?v=XMm0HsmOTFI)
+20. [The Code: Linux Documentary](https://www.youtube.com/watch?v=XMm0HsmOTFI)
 
 [![Linux Documentary](/img/the-code.jpg)](https://www.youtube.com/watch?v=XMm0HsmOTFI)
 
-20. [Revolution OS: Linux and Open Source](https://www.youtube.com/watch?v=k0RYQVkQmWU)
+21. [Revolution OS: Linux and Open Source](https://www.youtube.com/watch?v=k0RYQVkQmWU)
 
 [![Revolution OS still frame with Linus Torvalds](/img/revolution-os.jpg)](https://www.youtube.com/watch?v=k0RYQVkQmWU)
 
-21. Download: The True Story of the Internet
+22. Download: The True Story of the Internet
 
 * Part 1
 
@@ -115,23 +119,23 @@ on YouTube.
 
 [![Part 4](/img/movie-download-04.jpg)](https://www.youtube.com/watch?v=NtNFk9Q9v1M)
 
-22. [Nerds 2.0.1 A Brief History of the Internet](https://www.youtube.com/watch?v=qvUYPm2nVXM)
+23. [Nerds 2.0.1 A Brief History of the Internet](https://www.youtube.com/watch?v=qvUYPm2nVXM)
 
 [![Nerds 2.0.1 A Brief History of the Internet](/img/nerds-2.0.jpg)](https://www.youtube.com/watch?v=qvUYPm2nVXM)
 
-23. [eBPF Documentary](https://www.youtube.com/watch?v=Wb_vD3XZYOA)
+24. [eBPF Documentary](https://www.youtube.com/watch?v=Wb_vD3XZYOA)
 
 [![eBPF Documentary](/img/ebpf.jpg)](https://www.youtube.com/watch?v=Wb_vD3XZYOA)
 
-24. [The Internet's Own Boy: The Story of Aaron Swartz](https://www.youtube.com/watch?v=9vz06QO3UkQ)
+25. [The Internet's Own Boy: The Story of Aaron Swartz](https://www.youtube.com/watch?v=9vz06QO3UkQ)
 
 [![The Internet's Own Boy: The Story of Aaron Swartz](/img/aaron-swartz.jpg)](https://www.youtube.com/watch?v=9vz06QO3UkQ)
 
-25. [Nvidia Documentary](https://www.youtube.com/watch?v=1QC9X_QW52k)
+26. [Nvidia Documentary](https://www.youtube.com/watch?v=1QC9X_QW52k)
 
 [![Nvidia with Jensen Huang](/img/nvidia.jpg)](https://www.youtube.com/watch?v=1QC9X_QW52k)
 
-26. [CODE: Debugging the Gender Gap](https://www.youtube.com/watch?v=rQKRw6tWsb8)
+27. [CODE: Debugging the Gender Gap](https://www.youtube.com/watch?v=rQKRw6tWsb8)
 
 [![CODE: Debugging the Gender Gap](/img/code-gender.jpg)](https://www.youtube.com/watch?v=rQKRw6tWsb8)
 

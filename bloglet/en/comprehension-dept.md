@@ -1,7 +1,7 @@
 ---
 title: "Comprehension Debt - the hidden cost of AI generated code."
 url: https://addyosmani.com/blog/comprehension-debt/
-date: 2025-04-14
+date: 2026-04-14
 author: jcubic
 tags: bloglet_en
 ---

@@ -4,6 +4,7 @@ description: In this article, I will list documentaries about languages, librari
 date: 2025-03-05
 author: jcubic
 tags: articles_en
+updated: 2026-06-16
 ---
 
 People love watching movies, especially related to things they love. Developers are no
@@ -138,6 +139,11 @@ on YouTube.
 27. [CODE: Debugging the Gender Gap](https://www.youtube.com/watch?v=rQKRw6tWsb8)
 
 [![CODE: Debugging the Gender Gap](/img/code-gender.jpg)](https://www.youtube.com/watch?v=rQKRw6tWsb8)
+
+28. [Clojure: The Documentary](https://www.youtube.com/watch?v=Y24vK_QDLFg)
+
+[![Clojure: The Documentary](/img/clojure.jpg)](https://www.youtube.com/watch?v=Y24vK_QDLFg)
+
 
 {% follow %}
 

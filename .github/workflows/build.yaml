@@ -21,8 +21,70 @@ jobs:
       - name: Install base
         run: npm ci
 
+      - name: Validate social card SVG
+        run: |
+          sudo apt-get install -y libxml2-utils
+          node --input-type=module <<'EOF'
+          import { Liquid } from 'liquidjs';
+          import { readFile, writeFile, unlink } from 'fs/promises';
+          import { execSync } from 'child_process';
+
+          const liquid = new Liquid();
+          const src = await readFile('static/img/card.svg', 'utf8');
+          const tmpl = liquid.parse(src);
+          const rendered = await liquid.render(tmpl, {
+            username: 'jcubic',
+            fullname: 'Jakub T. Jankiewicz',
+            title: 'Test tytu&#322; z &amp; znakami specjalnymi',
+            path: '/tmp',
+            date: '1 stycznia 2026'
+          });
+          const tmp = '/tmp/validate-social-card.svg';
+          await writeFile(tmp, rendered);
+          try {
+            execSync(`xmllint --noout ${tmp}`, { stdio: 'inherit' });
+            console.log('SVG validation passed');
+          } catch {
+            console.error('::error::static/img/card.svg renders invalid XML');
+            process.exit(1);
+          } finally {
+            await unlink(tmp).catch(() => {});
+          }
+          EOF
+
       - name: Build
         run: npm run build
+
+      - name: Validate JSON-LD
+        run: |
+          node --input-type=module <<'EOF'
+          import { readFile, readdir } from 'fs/promises';
+          import path from 'path';
+          import * as cheerio from 'cheerio';
+
+          async function* walk(dir) {
+            for (const entry of await readdir(dir, { withFileTypes: true })) {
+              const p = path.join(dir, entry.name);
+              if (entry.isDirectory()) yield* walk(p);
+              else if (entry.name.endsWith('.html')) yield p;
+            }
+          }
+
+          let fail = 0;
+          for await (const f of walk('_site')) {
+            const html = await readFile(f, 'utf8');
+            const $ = cheerio.load(html);
+            $('script[type="application/ld+json"]').each((_, el) => {
+              try {
+                JSON.parse($(el).text());
+              } catch (e) {
+                console.error(`::error::Invalid JSON-LD in ${f}: ${e.message}`);
+                fail = 1;
+              }
+            });
+          }
+          process.exit(fail);
+          EOF
 
       - name: Configure SSH key
         run: |

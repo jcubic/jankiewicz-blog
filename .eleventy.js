@@ -28,6 +28,15 @@ function formatDate(lang, date) {
     return date.toLocaleDateString(lang, options);
 }
 
+function xmlEscape(str) {
+    return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&apos;');
+}
+
 async function path_exists(path) {
     try {
         await access(path, fs.constants.R_OK | fs.constants.W_OK);
@@ -219,35 +228,39 @@ export default function(eleventyConfig) {
     eleventyConfig.addLiquidShortcode('card', async function() {
         const { title, author: username, date, lang, users } = this.ctx.environments
         const svg_path = path.join(__dirname, 'static/img');
+        const { inputPath, fileSlug } = this.page;
         const output_svg = await liquid.render(await svg, {
             username,
-            fullname: users[username].name,
-            title,
+            fullname: xmlEscape(users[username].name),
+            title: xmlEscape(title),
             path: svg_path,
-            date: formatDate(lang, date)
+            date: xmlEscape(formatDate(lang, date))
         });
-        const svg_fullname = path.join(__dirname, 'tmp.svg');
+        const svg_fullname = path.join(__dirname, `tmp-${lang}-${fileSlug}.svg`);
         await fs.writeFile(svg_fullname, output_svg);
         const directory = `_site/img/${lang}/`;
         if (!await path_exists(directory)) {
            await fs.mkdir(directory, { recursive: true });
         }
-        const { inputPath, fileSlug } = this.page;
         const filename = `${directory}${fileSlug}.png`;
         const page = await (await browser).newPage();
         await page.setViewport({
             height: 630,
             width: 1200
         });
-        await page.goto('file://' + svg_fullname);
-        await delay(100);
+        try {
+            await page.goto('file://' + svg_fullname);
+            await delay(100);
 
-        const imageBuffer = await page.screenshot({});
+            const imageBuffer = await page.screenshot({});
 
-        await fs.writeFile(filename, imageBuffer);
+            await fs.writeFile(filename, imageBuffer);
 
-        console.log(`[11ty] Writing ${filename} from ${inputPath} (shortcode)`);
-        await page.close();
+            console.log(`[11ty] Writing ${filename} from ${inputPath} (shortcode)`);
+        } finally {
+            await page.close();
+            await fs.unlink(svg_fullname).catch(() => {});
+        }
     });
 
     eleventyConfig.addTransform('minification', async function(content) {

@@ -18,8 +18,7 @@
   <meta name="msapplication-TileColor" content="#b72100" />
   <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
   <meta name="theme-color" content="#ffffff" />
-  {%- assign article_match = collections.articles | where: "url", page.url -%}
-  {%- assign has_card = article_match.size > 0 -%}
+  {%- assign article_lang = tags | article -%}
   {% assign social_image = site.url | append: "/img/" | append: lang | append: "/" | append: page.fileSlug | append: ".png" -%}
   <meta property="og:locale" content="{{ blog.locale }}" />
   <meta property="og:type" content="article" />
@@ -27,7 +26,7 @@
   <meta property="og:description" content="{% if description %}{{ description }}{% else %}{{ blog.description }}{% endif %}" />
   <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
   <meta property="og:site_name" content="{{ blog.title }}" />
-  {%- if has_card %}
+  {%- if article_lang %}
   <meta property="og:image" content="{{ social_image }}" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
@@ -39,7 +38,7 @@
   {%- if author and title %}
   <meta name="twitter:title" content="{{ title }}" />
   <meta name="twitter:description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}" />
-  {%- if has_card %}
+  {%- if article_lang %}
   <meta name="twitter:image" content="{{ social_image }}" />
   <meta name="twitter:image:alt" content="Simple image that shows title author and date of the article" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -74,7 +73,6 @@
   {% if has_code -%}
   <link href="https://cdn.jsdelivr.net/npm/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet" />
   {% endif -%}
-  {%- assign article_lang = tags | article -%}
   {%- assign is_home = tags | includes: "home" -%}
   {% if is_home %}
     <script type="application/ld+json">

@@ -15,7 +15,6 @@ languages that we all use and love. Here is a list of documentaries created by
 on YouTube.
 
 <!-- more -->
-{% card %}
 
 1. [React.js](https://www.youtube.com/watch?v=8pDqJVdNa44) by Honeypot
 

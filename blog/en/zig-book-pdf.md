@@ -19,7 +19,6 @@ Fedora GNU/Linux, because this is what I'm using, but building on Ubuntu or diff
 should be similar. You only need to find the right package names to install.
 
 <!-- more -->
-{%- card -%}
 
 Zig book require zig in version 0.14.0 and when this article was written,
 the Fedora package had version 0.13.0. So when the version of zig is not up to date.

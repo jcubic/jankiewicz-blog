@@ -16,7 +16,6 @@ questions, as they are a bit low-effort anyway. So I decided to write an article
 will share a link when someone asks this question.
 
 <!-- more -->
-{% card %}
 
 Let's dive in.
 

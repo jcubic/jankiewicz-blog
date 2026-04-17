@@ -9,7 +9,6 @@ tags: articles_en
 Do you donate to charities? I do. And in this post I decided to explain, why it's worth bragging about it.
 
 <!-- more -->
-{% card %}
 
 Charities are non-profit, and the only money they have, come from donations. They often struggle to
 encourage people to donate, not a lot of people are willing to do this. Some of the charities like

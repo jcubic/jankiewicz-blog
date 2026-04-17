@@ -18,7 +18,8 @@
   <meta name="msapplication-TileColor" content="#b72100" />
   <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
   <meta name="theme-color" content="#ffffff" />
-  {%- assign has_card = page | has_card %}
+  {%- assign article_match = collections.articles | where: "url", page.url -%}
+  {%- assign has_card = article_match.size > 0 -%}
   {% assign social_image = site.url | append: "/img/" | append: lang | append: "/" | append: page.fileSlug | append: ".png" -%}
   <meta property="og:locale" content="{{ blog.locale }}" />
   <meta property="og:type" content="article" />

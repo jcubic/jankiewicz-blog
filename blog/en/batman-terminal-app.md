@@ -10,7 +10,6 @@ Some time ago I was contacted by a person involved with NFT, to create a project
 Batman movie website](https://www.firstshowing.net/2021/there-is-a-new-viral-marketing-website-for-the-batman-to-follow/).
 
 <!-- more -->
-{% card %}
 
 The person wanted to have a website that looked similar to a Batman Promotion website that looked
 like created by [Ridder](https://en.wikipedia.org/wiki/Riddler). The copy of the old website can be

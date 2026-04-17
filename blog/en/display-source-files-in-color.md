@@ -17,7 +17,6 @@ as part of the website. I just later realized that this is similar to JSON Viewe
 In this article, I will show how I did it and add this feature to my blog.
 
 <!-- more -->
-{% card %}
 
 If you just want to look at the demo. Open this link with the JavaScript file used on my
 blog: [blog.js](/js/blog.js).

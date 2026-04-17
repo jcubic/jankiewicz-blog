@@ -15,7 +15,6 @@ komiksami (w tym mangą oraz anime). Wiele rzeczy będzie na tematy, które nie
 pasują do mojego bloga ["Głównie JavaScript"](https://jcubic.pl).
 
 <!-- more -->
-{%- card -%}
 
 Powodem dla którego postanowiłem założyć tego bloga, jest moja marka osobista,
 nad którą chciałem popracować. Chciałem mieć coś co łatwo jest utożsamić z moim

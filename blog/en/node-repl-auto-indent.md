@@ -12,7 +12,6 @@ on the next line is indented. This article will describe a story of adding this 
 that require contributing to [Node.js](https://nodejs.org/en).
 
 <!-- more -->
-{% card %}
 
 The first version of the LIPS Scheme Node REPL, included command line history,
 I've copied part of Node.js REPL source code and tweak it. No worries I included

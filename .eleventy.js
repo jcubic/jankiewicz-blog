@@ -113,14 +113,16 @@ export default function(eleventyConfig) {
         });
     });
 
+    eleventyConfig.addCollection('articles', function(collectionApi) {
+        return collectionApi.getAll().filter(item => {
+            return Array.isArray(item.data.tags)
+                && item.data.tags.some(tag => tag.startsWith('articles_'));
+        });
+    });
+
     eleventyConfig.addAsyncFilter('has_code', async page => {
         const md = await fs.readFile(page.inputPath, 'utf8');
         return /```./.test(md);
-    });
-
-    eleventyConfig.addAsyncFilter('has_card', async page => {
-        const md = await fs.readFile(page.inputPath, 'utf8');
-        return /{%-?\s+card\s+-?%}/.test(md);
     });
 
     eleventyConfig.addFilter('includes', (input, value) => {

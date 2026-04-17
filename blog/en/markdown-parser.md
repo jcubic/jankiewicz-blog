@@ -23,7 +23,6 @@ with jQuery Terminal. But if you follow along, you should be able to use it
 for different targets, like HTML.
 
 <!-- more -->
-{% card %}
 
 Most of the demos I create start on CodePen, that's why I prefer to use UMD
 modules since this is the easiest to set up. If you want to see the final code,

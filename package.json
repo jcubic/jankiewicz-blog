@@ -12,16 +12,18 @@
   "author": "Jakub T. Jankiewicz <jcubic@onet.pl> (https://jcubic.pl/jakub-jankiewicz/)",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^3.1.2",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.1",
-    "cheerio": "^1.1.2",
-    "eleventy-plugin-embed-everything": "^1.21.0",
+    "@11ty/eleventy": "^3.1.5",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
+    "cheerio": "^1.2.0",
+    "eleventy-plugin-embed-everything": "^1.21.2",
     "eleventy-xml-plugin": "^0.1.0",
-    "figlet": "^1.8.2",
+    "figlet": "^1.11.0",
     "html-entities": "^2.6.0",
     "html-minifier-terser": "^7.2.0",
     "markdown-it-abbr": "^2.0.0",
-    "puppeteer": "^24.15.0",
     "striptags": "^3.2.0"
+  },
+  "devDependencies": {
+    "eleventy-plugin-svg-social-card": "^0.2.0"
   }
 }

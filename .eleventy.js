@@ -1,13 +1,12 @@
 import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight';
 import embeds from 'eleventy-plugin-embed-everything';
+import socialCard from 'eleventy-plugin-svg-social-card';
 import markdownIt from 'markdown-it';
 import abbr from 'markdown-it-abbr';
 import { minify } from 'html-minifier-terser';
 import { encode } from 'html-entities';
 import path from 'path';
 import fs from 'fs/promises';
-import { Liquid } from 'liquidjs';
-import puppeteer from 'puppeteer';
 import { dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import * as cheerio from 'cheerio';
@@ -17,33 +16,11 @@ import crc32 from './crc32.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-const liquid = new Liquid();
-
 const dev = process.env.ELEVENTY_RUN_MODE !== 'build';
-
-const delay = time => new Promise(resolve => setTimeout(resolve, time));
 
 function formatDate(lang, date) {
     const options = { year: 'numeric', month: 'short', day: 'numeric' };
     return date.toLocaleDateString(lang, options);
-}
-
-function xmlEscape(str) {
-    return String(str)
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;')
-        .replace(/'/g, '&apos;');
-}
-
-async function path_exists(path) {
-    try {
-        await access(path, fs.constants.R_OK | fs.constants.W_OK);
-        return true;
-    } catch (e) {
-        return false;
-    }
 }
 
 function transform_headers(content) {
@@ -86,23 +63,28 @@ export default function(eleventyConfig) {
         linkify: true
     };
 
-    let browser;
-
     eleventyConfig.addTransform('add-header-links', transform_headers);
 
-    eleventyConfig.on('eleventy.before', async ({ dir, runMode, outputMode }) => {
-        browser = puppeteer.launch({
-            headless: 'new',
-            args: ['--no-sandbox']
-        });
-    });
-
-    eleventyConfig.on('eleventy.after', async ({ dir, results, runMode, outputMode }) => {
-        (await browser).close();
-    });
-
-    const svg = fs.readFile('static/img/card.svg', 'utf8').then(svg => {
-        return liquid.parse(svg);
+    eleventyConfig.addPlugin(socialCard, {
+        template: path.join(__dirname, 'static/img/card.svg'),
+        outputDir: path.join(__dirname, '_site/img'),
+        urlPath: '/img',
+        filename: (page) => {
+            // blog posts live under blog/{lang}/*.md — derive lang from the path
+            const m = page.inputPath.match(/\/blog\/(\w+)\//);
+            const lang = m ? m[1] : 'en';
+            return `${lang}/${page.fileSlug}.png`;
+        },
+        data(ctx) {
+            const { title, author: username, date, lang, users } = ctx;
+            return {
+                username,
+                fullname: users[username].name,
+                title,
+                path: path.join(__dirname, 'static/img'),
+                date: formatDate(lang, date),
+            };
+        },
     });
 
     eleventyConfig.addPlugin(embeds);
@@ -216,44 +198,6 @@ export default function(eleventyConfig) {
     eleventyConfig.addLiquidShortcode('follow', function() {
         return `<p>If you find this article interesting you may want to follow me on Twitter:
 <a href="https://jcu.bi/twitter">@jcubic</a> and on <a href="https://jcu.bi/ln">LinkedIn</a>.</p>`;
-    });
-
-    eleventyConfig.addLiquidShortcode('card', async function() {
-        const { title, author: username, date, lang, users } = this.ctx.environments
-        const svg_path = path.join(__dirname, 'static/img');
-        const { inputPath, fileSlug } = this.page;
-        const output_svg = await liquid.render(await svg, {
-            username,
-            fullname: xmlEscape(users[username].name),
-            title: xmlEscape(title),
-            path: svg_path,
-            date: xmlEscape(formatDate(lang, date))
-        });
-        const svg_fullname = path.join(__dirname, `tmp-${lang}-${fileSlug}.svg`);
-        await fs.writeFile(svg_fullname, output_svg);
-        const directory = `_site/img/${lang}/`;
-        if (!await path_exists(directory)) {
-           await fs.mkdir(directory, { recursive: true });
-        }
-        const filename = `${directory}${fileSlug}.png`;
-        const page = await (await browser).newPage();
-        await page.setViewport({
-            height: 630,
-            width: 1200
-        });
-        try {
-            await page.goto('file://' + svg_fullname);
-            await delay(100);
-
-            const imageBuffer = await page.screenshot({});
-
-            await fs.writeFile(filename, imageBuffer);
-
-            console.log(`[11ty] Writing ${filename} from ${inputPath} (shortcode)`);
-        } finally {
-            await page.close();
-            await fs.unlink(svg_fullname).catch(() => {});
-        }
     });
 
     eleventyConfig.addTransform('minification', async function(content) {

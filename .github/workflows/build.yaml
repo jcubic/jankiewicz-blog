@@ -30,7 +30,7 @@ jobs:
           import { execSync } from 'child_process';
 
           const liquid = new Liquid();
-          const src = await readFile('static/img/card.svg', 'utf8');
+          const src = await readFile('src/static/img/card.svg', 'utf8');
           const tmpl = liquid.parse(src);
           const rendered = await liquid.render(tmpl, {
             username: 'jcubic',

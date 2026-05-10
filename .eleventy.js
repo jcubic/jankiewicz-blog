@@ -66,7 +66,7 @@ export default function(eleventyConfig) {
     eleventyConfig.addTransform('add-header-links', transform_headers);
 
     eleventyConfig.addPlugin(socialCard, {
-        template: path.join(__dirname, 'static/img/card.svg'),
+        template: path.join(__dirname, 'src/static/img/card.svg'),
         outputDir: path.join(__dirname, '_site/img'),
         urlPath: '/img',
         filename: (page) => {
@@ -81,7 +81,7 @@ export default function(eleventyConfig) {
                 username,
                 fullname: users[username].name,
                 title,
-                path: path.join(__dirname, 'static/img'),
+                path: path.join(__dirname, 'src/static/img'),
                 date: formatDate(lang, date),
             };
         },
@@ -92,7 +92,7 @@ export default function(eleventyConfig) {
     const md = markdownIt(options).use(abbr);
     eleventyConfig.setLibrary('md', md);
     eleventyConfig.addPlugin(syntaxHighlight);
-    eleventyConfig.addPassthroughCopy({ 'static': '.' });
+    eleventyConfig.addPassthroughCopy({ 'src/static': '.' });
 
     eleventyConfig.addCollection('articleSets', function(collectionApi) {
         return filter_tags(collectionApi, key => key.match(/articles_|pages_/));
@@ -168,7 +168,7 @@ export default function(eleventyConfig) {
     });
 
     eleventyConfig.addAsyncShortcode('with_hash', async function(filename) {
-        const content = await fs.readFile(`./static/${filename}`, 'utf8');
+        const content = await fs.readFile(`./src/static/${filename}`, 'utf8');
         const hash = crc32(content);
         return `${filename}?${hash}`;
     });
@@ -260,4 +260,13 @@ export default function(eleventyConfig) {
         repo: 'https://github.com/jcubic/jankiewicz-blog',
         dev
     });
+
+    return {
+        dir: {
+            input: "src",
+            output: "_site",
+            includes: "_includes",
+            data: "_data"
+        }
+    };
 };

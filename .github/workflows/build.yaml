@@ -97,4 +97,4 @@ jobs:
         with:
           timeout_minutes: 5
           max_attempts: 3
-          command: scp -P ${{ secrets.SSH_PORT}} -o StrictHostKeyChecking=no -r ./_site/* ${{ secrets.SSH_USER }}@${{ secrets.SSH_SERVER }}:${{ secrets.SSH_PATH }}
+          command: tar -czf - -C ./_site . | ssh -p ${{ secrets.SSH_PORT }} -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SSH_SERVER }} "cd ${{ secrets.SSH_PATH }} && tar -xzf -"

@@ -85,12 +85,7 @@
                  "name": "{{ person.name }}",
                  "alternateName": "{{ person.alternateName }}",
                  "url": "{{ person.url }}",
-                 "image": {
-                     "@type": "{{ person.image['@type'] }}",
-                     "@id": "{{ person.image['@id'] }}",
-                     "url": "{{ person.image.url }}",
-                     "caption": "{{ person.image.caption }}"
-                 },
+                 "image": "{{ person.image }}",
                  "jobTitle": "{{ person.jobTitle }}",
                  "description": "{{ ld.person.description }}",
                  "sameAs": [
@@ -160,12 +155,7 @@
                  "name": "{{ person.name }}",
                  "alternateName": "{{ person.alternateName }}",
                  "url": "{{ person.url }}",
-                 "image": {
-                     "@type": "{{ person.image['@type'] }}",
-                     "@id": "{{ person.image['@id'] }}",
-                     "url": "{{ person.image.url }}",
-                     "caption": "{{ person.image.caption }}"
-                 },
+                 "image": "{{ person.image }}",
                  "jobTitle": "{{ person.jobTitle }}",
                  "description": "{{ ld.person.description }}",
                  "sameAs": [

@@ -91,7 +91,8 @@
                  "sameAs": [
                      {% for link in person.sameAs %}"{{ link }}"{% unless forloop.last %},
                      {% endunless %}{% endfor %}
-                 ]
+                 ],
+                 "knowsAbout": {{ person.knowsAbout | jsonify }}
              },
              {
                  "@type": "WebPage",
@@ -161,7 +162,8 @@
                  "sameAs": [
                      {% for link in person.sameAs %}"{{ link }}"{% unless forloop.last %},
                      {% endunless %}{% endfor %}
-                 ]
+                 ],
+                 "knowsAbout": {{ person.knowsAbout | jsonify }}
              },
              {
                  "@type": "BlogPosting",

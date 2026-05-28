@@ -126,6 +126,8 @@ export default function(eleventyConfig) {
         }
     });
 
+    eleventyConfig.addFilter('jsonify', value => JSON.stringify(value));
+
     eleventyConfig.addFilter('dump', obj => {
         console.log({obj});
         if (obj) {

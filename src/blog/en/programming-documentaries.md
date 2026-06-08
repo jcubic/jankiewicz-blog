@@ -4,7 +4,7 @@ description: In this article, I will list documentaries about languages, librari
 date: 2025-03-05
 author: jcubic
 tags: articles_en
-updated: 2026-06-16
+updated: 2026-06-18
 ---
 
 People love watching movies, especially related to things they love. Developers are no
@@ -146,6 +146,10 @@ on YouTube.
 29. [Spring: The Documentary](https://www.youtube.com/watch?v=0Gb1z-2SjHY)
 
 [![Spring: The Documentary](/img/spring.jpg)](https://www.youtube.com/watch?v=0Gb1z-2SjHY)
+
+30. [The Story of C++: The World's Most Consequential Programming Language](https://www.youtube.com/watch?v=lI7tMxzSJ7w)
+
+[![The Story of C++: The World's Most Consequential Programming Language](/img/c++.jpg)](https://www.youtube.com/watch?v=lI7tMxzSJ7w)
 
 {% follow %}
 

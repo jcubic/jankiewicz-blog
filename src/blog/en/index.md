@@ -38,4 +38,8 @@ This is a list of short form content, including TIL and
 * [{{post.date | date: "%Y-%m-%d" }}]: {% if post.data.url %}[{{ post.data.title }}]({{ post.data.url }}){% else %}{{ post.data.title }}{% endif %} {{ post.content }}
 {% endfor -%}
 
-{%- include "_abbr" -%}
+<p style="display: none">
+  <a rel="me" href="https://fosstodon.org/@jcubic">Mastodon</a>
+</p>
+
+{% include "_abbr" -%}

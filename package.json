@@ -24,6 +24,9 @@
     "striptags": "^3.2.0"
   },
   "devDependencies": {
-    "eleventy-plugin-svg-social-card": "^0.2.3"
+    "eleventy-plugin-svg-social-card": "^0.3.0"
+  },
+  "allowScripts": {
+    "puppeteer@23.11.1": true
   }
 }

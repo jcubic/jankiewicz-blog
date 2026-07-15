@@ -65,10 +65,15 @@ export default function(eleventyConfig) {
 
     eleventyConfig.addTransform('add-header-links', transform_headers);
 
+    // fix for local env where LD_PRELOAD=/lib64/liblsan.so.0 is set
+    // for Python cupy, numpy CUDA library
+    const { LD_PRELOAD: _, ...env } = process.env;
+
     eleventyConfig.addPlugin(socialCard, {
         template: path.join(__dirname, 'src/static/img/card.svg'),
         outputDir: path.join(__dirname, '_site/img'),
         urlPath: '/img',
+        launchOptions: { env },
         filename: (page) => {
             // blog posts live under blog/{lang}/*.md — derive lang from the path
             const m = page.inputPath.match(/\/blog\/(\w+)\//);

@@ -4,7 +4,7 @@ description: In this article, I will list documentaries about languages, librari
 date: 2025-03-05
 author: jcubic
 tags: articles_en
-updated: 2026-06-18
+updated: 2026-07-22
 ---
 
 People love watching movies, especially related to things they love. Developers are no
@@ -150,6 +150,10 @@ on YouTube.
 30. [The Story of C++: The World's Most Consequential Programming Language](https://www.youtube.com/watch?v=lI7tMxzSJ7w)
 
 [![The Story of C++: The World's Most Consequential Programming Language](/img/c++.jpg)](https://www.youtube.com/watch?v=lI7tMxzSJ7w)
+
+31. [The Java Story | The Official Documentary](https://www.youtube.com/watch?v=ZqGSg4b_cZA)
+
+[![The Java Story | The Official Documentary](/img/java.jpg)](https://www.youtube.com/watch?v=ZqGSg4b_cZA)
 
 {% follow %}
 

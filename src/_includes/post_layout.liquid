@@ -46,7 +46,8 @@ layout: main_layout.liquid
   <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/style.min.css" rel="stylesheet">
   <script>
-   mediumZoom('section img', {
+   mediumZoom('main :not(a) > img {
+  /* Twoje st', {
        margin: 24,
        background: '#fff',
        scrollOffset: 40

@@ -155,6 +155,11 @@ on YouTube.
 
 [![The Java Story | The Official Documentary](/img/java.jpg)](https://www.youtube.com/watch?v=ZqGSg4b_cZA)
 
+32. [The Story of VS Code | Official Documentary](https://www.youtube.com/watch?v=kHL3XzjpT5w)
+
+[![The Story of VS Code | Official Documentary](/img/vs-code.jpg)](https://www.youtube.com/watch?v=kHL3XzjpT5w)
+
+
 {% follow %}
 
 {% include "_abbr" %}

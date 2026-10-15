@@ -159,6 +159,9 @@ on YouTube.
 
 [![The Story of VS Code | Official Documentary](/img/vs-code.jpg)](https://www.youtube.com/watch?v=kHL3XzjpT5w)
 
+33. [KDE: The Documentary](https://youtube.com/watch?v=1Vyzla9mx4)
+
+[![KDE: The Documentary](/img/kde.webp)](https://youtube.com/watch?v=1Vyzla9mx4g)
 
 {% follow %}
 

@@ -20,7 +20,7 @@ feels like license laundering.
 
 The second reason is legal: purely AI-generated code is not written by a human, meaning it should
 not be copyrightable. The foundation for this principle in the US goes back to the famous [Monkey
-Selfie](https://en.wikipedia.org/wiki/Monkey_selfie_copyright_dispute) dispute, which established
+Selfie dispute](https://en.wikipedia.org/wiki/Monkey_selfie_copyright_dispute), which established
 that non-humans cannot hold copyrights.  A precedent later cited by the U.S. Copyright Office
 regarding AI. Following the same logic, [Wikimedia Commons requires all purely AI-generated images
 to be tagged as Public Domain](https://commons.wikimedia.org/wiki/Commons:AI-generated_media).

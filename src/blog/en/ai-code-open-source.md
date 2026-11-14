@@ -25,12 +25,16 @@ that non-humans cannot hold copyrights.  A precedent later cited by the U.S. Cop
 regarding AI. Following the same logic, [Wikimedia Commons requires all purely AI-generated images
 to be tagged as Public Domain](https://commons.wikimedia.org/wiki/Commons:AI-generated_media).
 
-However, copyright laws is differ across the globe. For instance, countries like the UK, which [grants
-limited copyright protection to computer-generated
-works](https://en.wikipedia.org/wiki/Copyright_and_artificial_intelligence_in_the_United_Kingdom). To
-make things fair across all jurisdictions, and to honor the open ecosystem that made AI possible,
-developers and companies should explicitly release AI-generated code under Open Source licenses or
-dedicate it to the public domain using Creative Commons Zero (CC0) license.
+However, copyright laws differ across the globe. For instance, countries like the UK grant limited
+copyright protection to computer-generated works. To make things fair across all jurisdictions, and
+to honor the open ecosystem that made AI possible, developers and companies should explicitly
+release AI-generated code under Open Source licenses or dedicate it to the public domain using the
+Creative Commons Zero (CC0) license.
+
+Of course, code is not always 100% manual or 100% automated. However, developers increasingly rely
+on AI without even reviewing the generated output, let alone modifying it to fit their specific
+needs. Code like this, where humans put little effort, except writing prompts, should definitely be
+Open Source.
 
 {% follow %}
 

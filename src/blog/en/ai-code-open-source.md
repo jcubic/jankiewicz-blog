@@ -31,7 +31,7 @@ to honor the open ecosystem that made AI possible, developers and companies shou
 release AI-generated code under Open Source licenses or dedicate it to the public domain using the
 Creative Commons Zero (CC0) license.
 
-Of course, code is not always 100% manual or 100% automated. However, developers increasingly rely
+Of course, code is not always 100% manual or 100% automated. However, developers more and more rely
 on AI without even reviewing the generated output, let alone modifying it to fit their specific
 needs. Code like this, where humans put little effort, except writing prompts, should definitely be
 Open Source.

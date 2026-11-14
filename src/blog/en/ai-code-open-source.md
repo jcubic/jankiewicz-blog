@@ -1,6 +1,6 @@
 ---
-title: AI-generated code should be Open Source
-description: All code generated with help from AI should be Open Source.
+title: All AI-generated code should be Open Source
+description: All code generated with help from AI should be Open Source or on Creative Commons Zero (CC0) license.
 date: 2026-11-13
 author: jcubic
 tags: articles_en

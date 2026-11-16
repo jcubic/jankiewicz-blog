@@ -38,4 +38,6 @@ Open Source.
 
 {% follow %}
 
+See [hacker news for discussion](https://news.ycombinator.com/item?id=50507303)
+
 {% include "_abbr" %}
